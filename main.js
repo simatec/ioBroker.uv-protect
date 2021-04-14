@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use strict';
 
 
@@ -6,8 +7,6 @@ const utils = require('@iobroker/adapter-core');
 // @ts-ignore
 const axios = require('axios').default;
 
-
-const openUVURL = 'https://api.openuv.io/api/v1/uv';
 let longitude;
 let latitude;
 let stopTimer;
@@ -96,6 +95,8 @@ async function requestAPI() {
         try {
             adapter.log.info('API Request started ...');
 
+            const openUVURL = 'https://api.openuv.io/api/v1/uv';
+
             const openUVRequest = await axios({
                 method: 'get',
                 baseURL: openUVURL,
@@ -109,9 +110,10 @@ async function requestAPI() {
                 },
                 responseType: 'json'
             });
+
             if (openUVRequest.data && openUVRequest.data.result) {
                 adapter.log.info('API Request successfully completed');
-                
+
                 // set State for uv and ozone
                 await adapter.setStateAsync('uv', openUVRequest.data.result.uv, true);
                 await adapter.setStateAsync('uv_time', openUVRequest.data.result.uv_time, true);
@@ -181,7 +183,7 @@ async function main() {
         stopTimer = setTimeout(() => adapter.stop(), 5000);
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!')
-        stopTimer = setTimeout(() => adapter.stop(), 5000);
+        stopTimer = setTimeout(() => adapter.stop(), 3000);
     }
 }
 

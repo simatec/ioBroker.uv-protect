@@ -27,11 +27,7 @@
                 if ($key.attr('type') === 'checkbox') {
                     // do not call onChange direct, because onChange could expect some arguments
                     $key.prop('checked', settings[id]).on('change', function () {
-                        if ($('#systemGeoData').prop('checked')) {
-                            $('.systemData').hide();
-                        } else {
-                            $('.systemData').show();
-                        }
+                        showHideSettings();
                         onChange();
                     });
                 } else {
@@ -42,6 +38,7 @@
                         ;
                 }
             });
+            showHideSettings();
             onChange(false);
             // reinitialize all the Materialize labels on the page if you are dynamically adding inputs:
             if (M) M.updateTextFields();
@@ -60,6 +57,14 @@
                 }
             });
             callback(obj);
+        }
+
+        function showHideSettings() {
+            if ($('#systemGeoData').prop('checked')) {
+                $('.systemData').hide();
+            } else {
+                $('.systemData').show();
+            }
         }
     </script>
 
