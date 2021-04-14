@@ -1,0 +1,493 @@
+{
+    "common": {
+        "name": "uv-protect",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "uv-protect",
+        "titleLang": {
+            "en": "uv-protect",
+            "de": "UV-Schutz",
+            "ru": "УФ-защита",
+            "pt": "UV-proteger",
+            "nl": "uv-bescherming",
+            "fr": "protection contre les uv",
+            "it": "protezione UV",
+            "es": "proteger uv",
+            "pl": "ochrona UV",
+            "zh-cn": "防紫外线"
+        },
+        "desc": {
+            "en": "UV-Protect from openUV-API",
+            "de": "UV-Protect vor openUV-API",
+            "ru": "УФ-защита от openUV-API",
+            "pt": "UV-Protect da openUV-API",
+            "nl": "UV-bescherming tegen openUV-API",
+            "fr": "UV-Protect de openUV-API",
+            "it": "Protezione UV da openUV-API",
+            "es": "Protección UV de openUV-API",
+            "pl": "Ochrona UV przed openUV-API",
+            "zh-cn": "来自openUV-API的UV保护"
+        },
+        "authors": [
+            "simatec <nais@gmx.net>"
+        ],
+        "keywords": [
+            "UV-Protect",
+            "UV",
+            "openUV",
+            "Ozone"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "uv-protect.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.uv-protect/master/admin/uv-protect.png",
+        "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "schedule",
+		"schedule": "0 * * * *",
+        "allowInit": true,
+        "type": "weather",
+        "compact": true,
+        "materialize": true,
+        "supportCustoms": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "apiKey": "",
+        "systemGeoData": true,
+        "longitude": "",
+        "latitude": ""
+
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "safe_exposure_time",
+            "type": "channel",
+            "common": {
+                "name": "safe exposure time"
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info",
+            "type": "channel",
+            "common": {
+                "name": "sun info"
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times",
+            "type": "channel",
+            "common": {
+                "name": "sun times"
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_position",
+            "type": "channel",
+            "common": {
+                "name": "sun position"
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "uv",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_time",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "uv time",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_max",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "uv_max",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_max_time",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "uv max time",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "ozone",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "ozone",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "ozone_time",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "ozone time",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st1",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st1",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st2",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st2",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st3",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st3",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st4",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st4",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st5",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st5",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "safe_exposure_time.st6",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "safe exposure time st6",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.solarNoon",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "solarNoon",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.nadir",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "nadir",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.sunrise",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "sunrise",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.sunset",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "sunset",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.sunriseEnd",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "sunriseEnd",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.sunsetStart",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "sunsetStart",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.dawn",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "dawn",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.dusk",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "dusk",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.nauticalDawn",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "nauticalDawn",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.nauticalDusk",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "nauticalDusk",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.nightEnd",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "nightEnd",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.night",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "night",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.goldenHourEnd",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "goldenHourEnd",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_times.goldenHour",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "goldenHour",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_position.azimuth",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "azimuth",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "sun_info.sun_position.altitude",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "altitude",
+                "type": "number",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_json",
+            "type": "state",
+            "common": {
+                "role": "json",
+                "name": "json uv",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        }
+    ]
+}
