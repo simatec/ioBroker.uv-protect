@@ -179,10 +179,10 @@ async function main() {
 
     if (adapter.config.apiKey && longitude && latitude) {
         await requestAPI();
-        stopTimer = setTimeout(() => adapter.stop(), 5000);
+        stopTimer = setTimeout(() => adapter.stop(), 6000);
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!')
-        stopTimer = setTimeout(() => adapter.stop(), 3000);
+        stopTimer = setTimeout(() => adapter.stop(), 6000);
     }
 }
 
