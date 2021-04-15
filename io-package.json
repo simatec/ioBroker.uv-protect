@@ -4,7 +4,16 @@
         "version": "0.1.0",
         "news": {
             "0.1.0": {
-                "en": "first beta"
+                "en": "first beta",
+                "de": "erste Beta",
+                "ru": "первая бета",
+                "pt": "primeiro beta",
+                "nl": "eerste bèta",
+                "fr": "première bêta",
+                "it": "prima beta",
+                "es": "primera beta",
+                "pl": "pierwsza beta",
+                "zh-cn": "第一个测试版"
             },
             "0.0.1": {
                 "en": "initial release",
