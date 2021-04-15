@@ -1,8 +1,11 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "news": {
+            "0.1.0": {
+                "en": "first beta"
+            },
             "0.0.1": {
                 "en": "initial release",
                 "de": "Erstveröffentlichung",
@@ -59,12 +62,12 @@
         "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
         "loglevel": "info",
         "mode": "schedule",
-		"schedule": "0 * * * *",
+        "schedule": "0 * * * *",
         "allowInit": true,
         "type": "weather",
         "compact": true,
         "materialize": true,
-        "supportCustoms": true,
+        "supportCustoms": false,
         "dependencies": [
             {
                 "js-controller": ">=2.0.0"
@@ -76,7 +79,6 @@
         "systemGeoData": true,
         "longitude": "",
         "latitude": ""
-
     },
     "objects": [],
     "instanceObjects": [
@@ -483,6 +485,45 @@
                 "role": "json",
                 "name": "json uv",
                 "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_level",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "UV Level",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_alert",
+            "type": "state",
+            "common": {
+                "role": "switch",
+                "name": "UV Alert",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "uv_warn",
+            "type": "state",
+            "common": {
+                "role": "switch",
+                "name": "UV Warn",
+                "type": "boolean",
                 "read": true,
                 "write": false,
                 "def": ""

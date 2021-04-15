@@ -161,6 +161,34 @@ async function requestAPI() {
                 await adapter.setStateAsync('safe_exposure_time.st5', openUVRequest.data.result.safe_exposure_time.st5, true);
                 await adapter.setStateAsync('safe_exposure_time.st6', openUVRequest.data.result.safe_exposure_time.st6, true);
 
+                // UV Level
+                const uvLevel = openUVRequest.data.result.uv;
+
+                if (uvLevel <= 2) {
+                    await adapter.setStateAsync('uv_level', 'low', true);
+                    await adapter.setStateAsync('uv_warn', false, true);
+                    await adapter.setStateAsync('uv_alert', false, true);
+                } else
+                    if (uvLevel > 2 && uvLevel <= 5) {
+                        await adapter.setStateAsync('uv_level', 'moderate', true);
+                        await adapter.setStateAsync('uv_warn', false, true);
+                        await adapter.setStateAsync('uv_alert', false, true);
+                    } else
+                        if (uvLevel > 5 && uvLevel <= 7) {
+                            await adapter.setStateAsync('uv_level', 'high', true);
+                            await adapter.setStateAsync('uv_warn', true, true);
+                            await adapter.setStateAsync('uv_alert', false, true);
+                        } else
+                            if (uvLevel > 7 && uvLevel <= 10) {
+                                await adapter.setStateAsync('uv_level', 'very high', true);
+                                await adapter.setStateAsync('uv_warn', true, true);
+                                await adapter.setStateAsync('uv_alert', true, true);
+                            } else
+                                if (uvLevel > 10) {
+                                    await adapter.setStateAsync('uv_level', 'extreme', true);
+                                    await adapter.setStateAsync('uv_warn', true, true);
+                                    await adapter.setStateAsync('uv_alert', true, true);
+                                }
 
                 adapter.log.info('API Request done')
             } else {

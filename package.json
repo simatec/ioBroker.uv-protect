@@ -1,6 +1,6 @@
 {
   "name": "iobroker.uv-protect",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "UV-Protect from openUV-API",
   "author": {
     "name": "simatec",
@@ -19,7 +19,8 @@
     "url": "https://github.com/simatec/ioBroker.uv-protect"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.4.0"
+    "@iobroker/adapter-core": "^2.4.0",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@iobroker/testing": "^2.4.4",

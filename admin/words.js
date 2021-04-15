@@ -2,40 +2,10 @@
 'use strict';
 
 systemDictionary = {
-    'uv-protect adapter settings': {
-        'en': 'Adapter settings for uv-protect',
-        'de': 'Adaptereinstellungen für uv-protect',
-        'ru': 'Настройки адаптера для uv-protect',
-        'pt': 'Configurações do adaptador para uv-protect',
-        'nl': 'Adapterinstellingen voor uv-protect',
-        'fr': "Paramètres d'adaptateur pour uv-protect",
-        'it': "Impostazioni dell'adattatore per uv-protect",
-        'es': 'Ajustes del adaptador para uv-protect',
-        'pl': 'Ustawienia adaptera dla uv-protect',
-        'zh-cn': 'uv-protect的适配器设置'
-    },
-    'option1': {
-        'en': 'option1',
-        'de': 'Option 1',
-        'ru': 'Опция 1',
-        'pt': 'Opção 1',
-        'nl': 'Optie 1',
-        'fr': 'Option 1',
-        'it': 'opzione 1',
-        'es': 'Opción 1',
-        'pl': 'opcja 1',
-        'zh-cn': '选项1'
-    },
-    'option2': {
-        'en': 'option2',
-        'de': 'Option 2',
-        'ru': 'option2',
-        'pt': 'opção 2',
-        'nl': 'Optie 2',
-        'fr': 'Option 2',
-        'it': 'opzione 2',
-        'es': 'opcion 2',
-        'pl': 'Opcja 2',
-        'zh-cn': '选项2'
-    }
+    "Get the API key from open.io": {                "en": "Get the API key from open.io",                    "de": "Holen Sie sich den API Key von open.io",          "ru": "Получите ключ API из open.io",                    "pt": "Obtenha a chave de API em open.io",               "nl": "Haal de API-sleutel op van open.io",              "fr": "Obtenez la clé API de open.io",                   "it": "Ottieni la chiave API da open.io",                "es": "Obtenga la clave API de open.io",                 "pl": "Uzyskaj klucz API z open.io",                     "zh-cn": "从open.io获取API密钥"},
+    "Use astro data from the system settings": {     "en": "Use astro data from the system settings",         "de": "Astro-Daten aus den Systemeinstellungen verwenden", "ru": "Использовать астрономические данные из системных настроек", "pt": "Use os dados astro das configurações do sistema", "nl": "Gebruik astrodata uit de systeeminstellingen",    "fr": "Utiliser les données astronomiques des paramètres système", "it": "Usa i dati astronomici dalle impostazioni di sistema", "es": "Usa datos astronómicos de la configuración del sistema", "pl": "Użyj danych astro z ustawień systemowych",        "zh-cn": "使用系统设置中的astro数据"},
+    "latitude": {                                    "en": "latitude",                                        "de": "Breitengrad",                                     "ru": "широта",                                          "pt": "latitude",                                        "nl": "breedtegraad",                                    "fr": "latitude",                                        "it": "latitudine",                                      "es": "latitud",                                         "pl": "szerokość",                                       "zh-cn": "纬度"},
+    "longitude": {                                   "en": "longitude",                                       "de": "Längengrad",                                      "ru": "долгота",                                         "pt": "longitude",                                       "nl": "Lengtegraad",                                     "fr": "longitude",                                       "it": "longitudine",                                     "es": "longitud",                                        "pl": "długość geograficzna",                            "zh-cn": "经度"},
+    "uv-protect adapter settings": {                 "en": "Adapter settings for uv-protect",                 "de": "Adaptereinstellungen für uv-protect",             "ru": "Настройки адаптера для uv-protect",               "pt": "Configurações do adaptador para uv-protect",      "nl": "Adapterinstellingen voor uv-protect",             "fr": "Paramètres d'adaptateur pour uv-protect",         "it": "Impostazioni dell'adattatore per uv-protect",     "es": "Ajustes del adaptador para uv-protect",           "pl": "Ustawienia adaptera dla uv-protect",              "zh-cn": "uv-protect的适配器设置"},
+    "API Key": {                                     "en": "API Key",                                         "de": "API Key",                                   "ru": "Ключ API",                                        "pt": "Chave API",                                       "nl": "API sleutel",                                     "fr": "clé API",                                         "it": "Chiave API",                                      "es": "Clave API",                                       "pl": "Klucz API",                                       "zh-cn": "API密钥"},
 };
