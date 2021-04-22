@@ -81,7 +81,11 @@
             {
                 "js-controller": ">=2.0.0"
             }
-        ]
+        ],
+        "jsonConfig": true,
+        "adminUI": {
+            "config": "json"
+        }
     },
     "native": {
         "apiKey": "",
