@@ -7,18 +7,10 @@
       "sm": 12,
       "md": 8,
       "lg": 8,
+      "help": "Get the API key from open.io",
+      "helpLink": "https://www.openuv.io/",
       "type": "password",
       "label": "API Key"
-    },
-    "_link": {
-      "newLine": true,
-      "type": "staticLink",
-      "href": "https://www.openuv.io/",
-      "text": "Get the API key from open.io",
-      "style": {
-        "text-decoration": "underline",
-        "color": "blue"
-      }
     },
     "systemGeoData": {
       "newLine": true,

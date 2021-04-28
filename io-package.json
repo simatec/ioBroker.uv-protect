@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "news": {
+            "0.2.0": {
+                "en": "jsonConfig for Admin5 added",
+                "de": "jsonConfig für Admin5 hinzugefügt",
+                "ru": "jsonConfig для Admin5 добавлен",
+                "pt": "jsonConfig para Admin5 adicionado",
+                "nl": "jsonConfig voor Admin5 toegevoegd",
+                "fr": "jsonConfig pour Admin5 ajouté",
+                "it": "jsonConfig per Admin5 aggiunto",
+                "es": "jsonConfig para Admin5 agregado",
+                "pl": "Dodano jsonConfig dla Admin5",
+                "zh-cn": "Admin5的jsonConfig已添加"
+            },
             "0.1.0": {
                 "en": "first beta",
                 "de": "erste Beta",
