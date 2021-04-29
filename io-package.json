@@ -83,7 +83,7 @@
         "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
         "loglevel": "info",
         "mode": "schedule",
-        "schedule": "0 * * * *",
+        "schedule": "10 * * * *",
         "allowInit": true,
         "type": "weather",
         "compact": true,
