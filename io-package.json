@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
+            "0.2.1": {
+                "en": "Fix for latest Repo",
+                "de": "Fix für latest Repo",
+                "ru": "Исправить для последнего репо",
+                "pt": "Correção para o Repo mais recente",
+                "nl": "Oplossing voor de nieuwste opslagplaats",
+                "fr": "Correctif pour le dernier repo",
+                "it": "Correzione per l'ultimo Repo",
+                "es": "Arreglo para el último repositorio",
+                "pl": "Napraw najnowsze repozytorium",
+                "zh-cn": "修复最新的回购"
+            },
             "0.2.0": {
                 "en": "jsonConfig for Admin5 added",
                 "de": "jsonConfig für Admin5 hinzugefügt",
@@ -85,6 +97,8 @@
         "mode": "schedule",
         "schedule": "10 * * * *",
         "allowInit": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
         "type": "weather",
         "compact": true,
         "materialize": true,

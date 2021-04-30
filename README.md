@@ -32,6 +32,9 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 
+### 0.2.1
+* (simatec) Fix for latest Repo
+
 ### 0.2.0
 * (simatec) jsonConfig for Admin5 added
 
