@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "news": {
+            "0.2.2": {
+                "en": "apiKey encrypted, fix async function",
+                "de": "apiKey verschlüsselt, asynchrone Funktion korrigiert",
+                "ru": "apiKey зашифрован, исправить асинхронную функцию",
+                "pt": "apiKey criptografado, corrigir função assíncrona",
+                "nl": "apiKey versleuteld, fix async-functie",
+                "fr": "apiKey chiffré, correction de la fonction asynchrone",
+                "it": "crittografata apiKey, correzione della funzione asincrona",
+                "es": "apiKey cifrado, corrige la función asíncrona",
+                "pl": "apiKey zaszyfrowane, napraw funkcję asynchroniczną",
+                "zh-cn": "apiKey加密，修复异步功能"
+            },
             "0.2.1": {
                 "en": "Fix for latest Repo",
                 "de": "Fix für latest Repo",

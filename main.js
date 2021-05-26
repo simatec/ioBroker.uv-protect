@@ -11,6 +11,20 @@ let latitude;
 let stopTimer;
 
 /**
+ * Decrypt the password/value with given key
+ * @param {string} key - Secret key
+ * @param {string} value - value to decript
+ * @returns {string}
+ */
+function decrypt(key, value) {
+    let result = '';
+    for (let i = 0; i < value.length; i++) {
+        result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
+    }
+    return result;
+}
+
+/**
  * The adapter instance
  * @type {ioBroker.Adapter}
  */
@@ -42,7 +56,7 @@ function getSystemData() {
     return new Promise(async (resolve, reject) => {
         if (adapter.config.systemGeoData) {
             try {
-                await adapter.getForeignObject("system.config", (err, state) => {
+                await adapter.getForeignObjectAsync("system.config", async (err, state) => {
 
                     if (err) {
                         adapter.log.error(err);
@@ -88,7 +102,7 @@ function getDate(d) {
         ('0' + d.getSeconds()).slice(-2) + 'Z';
 }
 
-async function requestAPI() {
+async function requestAPI(secret) {
     // @ts-ignore
     return new Promise(async (resolve, reject) => {
         try {
@@ -105,7 +119,7 @@ async function requestAPI() {
                     dt: getDate()
                 },
                 headers: {
-                    'x-access-token': adapter.config.apiKey
+                    'x-access-token': decrypt(secret, adapter.config.apiKey)
                 },
                 responseType: 'json'
             });
@@ -206,8 +220,10 @@ async function main() {
     await getSystemData();
 
     if (adapter.config.apiKey && longitude && latitude) {
-        await requestAPI();
-        stopTimer = setTimeout(() => adapter.stop(), 6000);
+        adapter.getForeignObjectAsync('system.config', async (err, obj) => {
+            await requestAPI((obj && obj.native && obj.native.secret) || 'Zgfr56gFe87jJOM');
+            stopTimer = setTimeout(() => adapter.stop(), 6000);
+        });
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!')
         stopTimer = setTimeout(() => adapter.stop(), 6000);

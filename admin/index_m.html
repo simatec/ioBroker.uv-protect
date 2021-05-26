@@ -18,6 +18,22 @@
     <script type="text/javascript" src="words.js"></script>
 
     <script type="text/javascript">
+
+        function encrypt(key, value) {
+            var result = '';
+            for (var i = 0; i < value.length; i++) {
+                result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
+            }
+            return result;
+        }
+        function decrypt(key, value) {
+            var result = '';
+            for (var i = 0; i < value.length; i++) {
+                result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
+            }
+            return result;
+        }
+
         // This will be called by the admin adapter when the settings page loads
         function load(settings, onChange) {
             if (!settings) return;
@@ -31,6 +47,10 @@
                         onChange();
                     });
                 } else {
+                    var val = settings[id];
+                    if (id === 'apiKey') {
+                        val = val ? decrypt((typeof systemConfig !== 'undefined' && systemConfig.native && systemConfig.native.secret) || 'Zgfr56gFe87jJOM', val) : '';
+                    }
                     // do not call onChange direct, because onChange could expect some arguments
                     $key.val(settings[id])
                         .on('change', () => onChange())
@@ -38,6 +58,7 @@
                         ;
                 }
             });
+
             showHideSettings();
             onChange(false);
             // reinitialize all the Materialize labels on the page if you are dynamically adding inputs:
@@ -53,7 +74,13 @@
                 if ($this.attr('type') === 'checkbox') {
                     obj[$this.attr('id')] = $this.prop('checked');
                 } else {
-                    obj[$this.attr('id')] = $this.val();
+                    var val = $this.val();
+                    var id = $this.attr('id');
+                    if (id === 'apiKey') {
+                        val = val ? encrypt((typeof systemConfig !== 'undefined' && systemConfig.native && systemConfig.native.secret) || 'Zgfr56gFe87jJOM', val) : '';
+                    }
+                    obj[id] = val;
+                    //obj[$this.attr('id')] = $this.val();
                 }
             });
             callback(obj);
