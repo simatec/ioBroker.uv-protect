@@ -33,6 +33,9 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 
+### 0.2.3
+* (simatec) apiKey auto encrypted
+
 ### 0.2.2
 * (simatec) apiKey encrypted
 * (simatec) fix async function

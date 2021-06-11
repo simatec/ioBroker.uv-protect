@@ -11,20 +11,6 @@ let latitude;
 let stopTimer;
 
 /**
- * Decrypt the password/value with given key
- * @param {string} key - Secret key
- * @param {string} value - value to decript
- * @returns {string}
- */
-function decrypt(key, value) {
-    let result = '';
-    for (let i = 0; i < value.length; i++) {
-        result += String.fromCharCode(key[i % key.length].charCodeAt(0) ^ value.charCodeAt(i));
-    }
-    return result;
-}
-
-/**
  * The adapter instance
  * @type {ioBroker.Adapter}
  */
@@ -119,7 +105,7 @@ async function requestAPI(secret) {
                     dt: getDate()
                 },
                 headers: {
-                    'x-access-token': decrypt(secret, adapter.config.apiKey)
+                    'x-access-token': adapter.config.apiKey
                 },
                 responseType: 'json'
             });

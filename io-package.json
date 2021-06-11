@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.2.2",
+        "version": "0.2.3",
         "news": {
+            "0.2.3": {
+                "en": "apiKey auto encrypted",
+                "de": "apiKey automatisch verschlüsselt",
+                "ru": "apiKey автоматически зашифрован",
+                "pt": "apiKey criptografado automaticamente",
+                "nl": "apiKey automatisch versleuteld",
+                "fr": "apiKey crypté automatiquement",
+                "it": "apiKey auto crittografato",
+                "es": "apiKey encriptado automáticamente",
+                "pl": "Automatyczne szyfrowanie apiKey",
+                "zh-cn": "apiKey 自动加密"
+            },
             "0.2.2": {
                 "en": "apiKey encrypted, fix async function",
                 "de": "apiKey verschlüsselt, asynchrone Funktion korrigiert",
@@ -117,7 +129,8 @@
         "supportCustoms": false,
         "dependencies": [
             {
-                "js-controller": ">=2.0.0"
+                "js-controller": ">=3.0.0",
+                "admin": ">=4.0.9"
             }
         ],
         "jsonConfig": true,
@@ -126,11 +139,13 @@
         }
     },
     "native": {
-        "apiKey": "",
         "systemGeoData": true,
         "longitude": "",
         "latitude": ""
     },
+    "encryptedNative": [
+        "apiKey"
+    ],
     "objects": [],
     "instanceObjects": [
         {
