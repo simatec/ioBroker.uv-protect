@@ -1,8 +1,13 @@
 {
+    "API Key": "Ключ API",
     "Get the API key from open.io": "Получите ключ API из open.io",
     "Use astro data from the system settings": "Использовать астрономические данные из системных настроек",
     "latitude": "широта",
     "longitude": "долгота",
     "uv-protect adapter settings": "Настройки адаптера для uv-protect",
-    "API Key": "Ключ API"
+    "low": "низкий",
+    "moderate": "умеренный",
+    "high": "высокая",
+    "very high": "очень высоко",
+    "extreme": "крайний"
 }

@@ -33,7 +33,15 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 
-### 0.2.3
+### 0.3.0 (24.06.2021)
+* (simatec) code cleaning
+* (simatec) added translate to system language for states
+* (simatec) Bugfix Timestamp
+* (simatec) value formating
+* (simatec) Dependencies updated
+* (simatec) name for states updated
+
+### 0.2.3 
 * (simatec) apiKey auto encrypted
 
 ### 0.2.2

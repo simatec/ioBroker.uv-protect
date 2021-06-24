@@ -1,8 +1,13 @@
 {
+    "API Key": "API sleutel",
     "Get the API key from open.io": "Haal de API-sleutel op van open.io",
     "Use astro data from the system settings": "Gebruik astrodata uit de systeeminstellingen",
     "latitude": "breedtegraad",
     "longitude": "Lengtegraad",
     "uv-protect adapter settings": "Adapterinstellingen voor uv-protect",
-    "API Key": "API sleutel"
+    "low": "laag",
+    "moderate": "matig",
+    "high": "hoog",
+    "very high": "heel hoog",
+    "extreme": "extreem"
 }

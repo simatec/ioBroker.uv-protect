@@ -1,8 +1,13 @@
 {
+    "API Key": "Chave API",
     "Get the API key from open.io": "Obtenha a chave de API em open.io",
     "Use astro data from the system settings": "Use os dados astro das configurações do sistema",
     "latitude": "latitude",
     "longitude": "longitude",
     "uv-protect adapter settings": "Configurações do adaptador para uv-protect",
-    "API Key": "Chave API"
+    "low": "baixo",
+    "moderate": "moderado",
+    "high": "Alto",
+    "very high": "muito alto",
+    "extreme": "extremo"
 }
