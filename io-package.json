@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.3.0",
+        "version": "0.3.1",
         "news": {
+            "0.3.1": {
+                "en": "Date/time formatted",
+                "de": "Datum/Uhrzeit formatiert",
+                "ru": "Дата / время отформатированы",
+                "pt": "Data / hora formatada",
+                "nl": "Datum/tijd geformatteerd",
+                "fr": "Date/heure formatée",
+                "it": "Data/ora formattata",
+                "es": "Formato de fecha / hora",
+                "pl": "Sformatowana data/godzina",
+                "zh-cn": "日期/时间格式化"
+            },
             "0.3.0": {
                 "en": "code cleaning, added translate to system language for states, Bugfix Timestamp, value formating, Dependencies updated, name for states updated",
                 "de": "Codebereinigung, Übersetzung in Systemsprache für Zustände hinzugefügt, Bugfix Timestamp, Wertformatierung, Abhängigkeiten aktualisiert, Name für Zustände aktualisiert",

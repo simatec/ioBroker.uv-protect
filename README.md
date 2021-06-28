@@ -33,6 +33,9 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 
+### 0.3.1 (28.06.2021)
+* (simatec) Date / time formatted
+
 ### 0.3.0 (24.06.2021)
 * (simatec) code cleaning
 * (simatec) added translate to system language for states

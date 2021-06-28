@@ -86,17 +86,6 @@ function getSystemData() {
     });
 }
 
-function convertUTCDateToLocalDate(date) {
-    const newDate = new Date(date.getTime() + date.getTimezoneOffset() * 60 * 1000);
-
-    const offset = date.getTimezoneOffset() / 60;
-    const hours = date.getHours();
-
-    newDate.setHours(hours - offset);
-
-    return newDate.toISOString();
-}
-
 async function requestAPI() {
     // @ts-ignore
     return new Promise(async (resolve) => {
@@ -125,39 +114,39 @@ async function requestAPI() {
 
                 // set State for uv and ozone
                 await adapter.setStateAsync('uv', Math.round(openUVRequest.data.result.uv * 100) / 100, true);
-                await adapter.setStateAsync('uv_time', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.uv_time)), true);
+                await adapter.setStateAsync('uv_time', new Date(openUVRequest.data.result.uv_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
                 await adapter.setStateAsync('uv_max', Math.round(openUVRequest.data.result.uv_max * 100) / 100, true);
-                await adapter.setStateAsync('uv_max_time', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.uv_max_time)), true);
+                await adapter.setStateAsync('uv_max_time', new Date(openUVRequest.data.result.uv_max_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
                 await adapter.setStateAsync('ozone', openUVRequest.data.result.ozone, true);
-                await adapter.setStateAsync('ozone_time', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.ozone_time)), true);
+                await adapter.setStateAsync('ozone_time', new Date(openUVRequest.data.result.ozone_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
 
                 // created json
                 let json = ({
                     "uv": Math.round(openUVRequest.data.result.uv * 100) / 100,
-                    "uv_time": convertUTCDateToLocalDate(new Date(openUVRequest.data.result.uv_time)),
+                    "uv_time": new Date(openUVRequest.data.result.uv_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                     "uv_max": Math.round(openUVRequest.data.result.uv_max * 100) / 100,
-                    "uv_max_time": convertUTCDateToLocalDate(new Date(openUVRequest.data.result.uv_max_time)),
+                    "uv_max_time": new Date(openUVRequest.data.result.uv_max_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                     "ozone": openUVRequest.data.result.ozone,
-                    "ozone_time": convertUTCDateToLocalDate(new Date(openUVRequest.data.result.ozone_time))
+                    "ozone_time": new Date(openUVRequest.data.result.ozone_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
                 });
 
                 await adapter.setStateAsync('uv_json', JSON.stringify(json), true);
 
                 // set State for safe sun times
-                await adapter.setStateAsync('sun_info.sun_times.solarNoon', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.solarNoon)), true);
-                await adapter.setStateAsync('sun_info.sun_times.nadir', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.nadir)), true);
-                await adapter.setStateAsync('sun_info.sun_times.sunrise', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.sunrise)), true);
-                await adapter.setStateAsync('sun_info.sun_times.sunset', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.sunset)), true);
-                await adapter.setStateAsync('sun_info.sun_times.sunriseEnd', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.sunriseEnd)), true);
-                await adapter.setStateAsync('sun_info.sun_times.sunsetStart', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.sunsetStart)), true);
-                await adapter.setStateAsync('sun_info.sun_times.dawn', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.dawn)), true);
-                await adapter.setStateAsync('sun_info.sun_times.dusk', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.dusk)), true);
-                await adapter.setStateAsync('sun_info.sun_times.nauticalDawn', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.nauticalDawn)), true);
-                await adapter.setStateAsync('sun_info.sun_times.nauticalDusk', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.nauticalDusk)), true);
-                await adapter.setStateAsync('sun_info.sun_times.nightEnd', openUVRequest.data.result.sun_info.sun_times.nightEnd ? convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.nightEnd)) : '', true);
-                await adapter.setStateAsync('sun_info.sun_times.night', openUVRequest.data.result.sun_info.sun_times.night ? convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.night)) : '', true);
-                await adapter.setStateAsync('sun_info.sun_times.goldenHourEnd', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.goldenHourEnd)), true);
-                await adapter.setStateAsync('sun_info.sun_times.goldenHour', convertUTCDateToLocalDate(new Date(openUVRequest.data.result.sun_info.sun_times.goldenHour)), true);
+                await adapter.setStateAsync('sun_info.sun_times.solarNoon', new Date(openUVRequest.data.result.sun_info.sun_times.solarNoon).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.nadir', new Date(openUVRequest.data.result.sun_info.sun_times.nadir).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.sunrise', new Date(openUVRequest.data.result.sun_info.sun_times.sunrise).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.sunset', new Date(openUVRequest.data.result.sun_info.sun_times.sunset).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.sunriseEnd', new Date(openUVRequest.data.result.sun_info.sun_times.sunriseEnd).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.sunsetStart', new Date(openUVRequest.data.result.sun_info.sun_times.sunsetStart).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.dawn', new Date(openUVRequest.data.result.sun_info.sun_times.dawn).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.dusk', new Date(openUVRequest.data.result.sun_info.sun_times.dusk).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.nauticalDawn', new Date(openUVRequest.data.result.sun_info.sun_times.nauticalDawn).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.nauticalDusk', new Date(openUVRequest.data.result.sun_info.sun_times.nauticalDusk).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.nightEnd', openUVRequest.data.result.sun_info.sun_times.nightEnd ? new Date(openUVRequest.data.result.sun_info.sun_times.nightEnd).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '', true);
+                await adapter.setStateAsync('sun_info.sun_times.night', openUVRequest.data.result.sun_info.sun_times.night ? new Date(openUVRequest.data.result.sun_info.sun_times.night).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '', true);
+                await adapter.setStateAsync('sun_info.sun_times.goldenHourEnd', new Date(openUVRequest.data.result.sun_info.sun_times.goldenHourEnd).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
+                await adapter.setStateAsync('sun_info.sun_times.goldenHour', new Date(openUVRequest.data.result.sun_info.sun_times.goldenHour).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), true);
 
                 // set State for safe sun position
                 const azimuth = openUVRequest.data.result.sun_info.sun_position.azimuth * 180 / Math.PI + 180;
