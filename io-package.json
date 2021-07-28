@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.3.1",
+        "version": "0.3.2",
         "news": {
+            "0.3.2": {
+                "en": "Bugfix",
+                "de": "Fehlerbehebung",
+                "ru": "Исправлена ошибка",
+                "pt": "Bugfix",
+                "nl": "Bugfix",
+                "fr": "Correction d'un bug",
+                "it": "Risoluzione del problema",
+                "es": "Arreglo del fallo",
+                "pl": "Naprawa błędów",
+                "zh-cn": "错误修正"
+            },
             "0.3.1": {
                 "en": "Date/time formatted",
                 "de": "Datum/Uhrzeit formatiert",
