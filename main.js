@@ -43,7 +43,7 @@ function getSystemData() {
     // @ts-ignore
     return new Promise(async (resolve) => {
         try {
-            adapter.getForeignObject('system.config', (err, obj) => {
+            await adapter.getForeignObjectAsync("system.config", async (err, obj) => {
                 systemLang = obj.common.language;
             });
         } catch (err) {
