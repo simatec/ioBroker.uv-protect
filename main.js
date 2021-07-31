@@ -43,45 +43,31 @@ function getSystemData() {
     // @ts-ignore
     return new Promise(async (resolve) => {
         try {
-            await adapter.getForeignObjectAsync("system.config", async (err, obj) => {
-                systemLang = obj.common.language;
-            });
-        } catch (err) {
-            adapter.log.warn('Language from the system settings cannot be called up. Please check configuration!');
-        }
-        if (adapter.config.systemGeoData) {
-            try {
-                await adapter.getForeignObjectAsync("system.config", async (err, state) => {
+            const obj = await adapter.getForeignObjectAsync('system.config', 'state');
 
-                    if (err) {
-                        adapter.log.error(err);
-                        // @ts-ignore
-                        resolve();
-                    } else {
-                        longitude = state.common.longitude;
-                        latitude = state.common.latitude;
-                        adapter.log.debug('System longitude: ' + state.common.longitude + ' System latitude: ' + state.common.latitude);
-                        // @ts-ignore
-                        resolve();
-                    }
-                });
-            } catch (err) {
-                adapter.log.warn('Astro data from the system settings cannot be called up. Please check configuration!');
+            if (obj) {
+                systemLang = obj.common.language;
+                adapter.log.debug('System language: ' + systemLang);
+
+                if (adapter.config.systemGeoData) {
+                    longitude = obj.common.longitude;
+                    latitude = obj.common.latitude;
+                    adapter.log.debug('System longitude: ' + longitude + ' System latitude: ' + latitude);
+                } else {
+                    longitude = adapter.config.longitude;
+                    latitude = adapter.config.latitude;
+                    adapter.log.debug('longitude: ' + longitude + ' latitude: ' + latitude);
+                }
+
+                // @ts-ignore
+                resolve();
+            } else {
+                adapter.log.error('system settings cannot be called up. Please check configuration!');
                 // @ts-ignore
                 resolve();
             }
-        } else {
-            try {
-                longitude = adapter.config.longitude;
-                latitude = adapter.config.latitude;
-                adapter.log.debug('longitude: ' + adapter.config.longitude + ' latitude: ' + adapter.config.latitude);
-                // @ts-ignore
-                resolve();
-            } catch (err) {
-                adapter.log.warn('Astro data from the system settings cannot be called up. Please check configuration!');
-                // @ts-ignore
-                resolve();
-            }
+        } catch (err) {
+            adapter.log.warn('system settings cannot be called up. Please check configuration!');
         }
     });
 }
@@ -207,13 +193,15 @@ async function main() {
     await getSystemData();
 
     if (adapter.config.apiKey && longitude && latitude) {
-        adapter.getForeignObjectAsync('system.config', async (err, obj) => {
+        const obj = await adapter.getForeignObjectAsync('system.config', 'state');
+
+        if (obj) {
             await requestAPI();
-            stopTimer = setTimeout(() => adapter.stop(), 6000);
-        });
+            stopTimer = setTimeout(async () => adapter.stop(), 6000);
+        }
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!');
-        stopTimer = setTimeout(() => adapter.stop(), 6000);
+        stopTimer = setTimeout(async () => adapter.stop(), 6000);
     }
 }
 

@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "uv-protect",
-        "version": "0.3.2",
+        "version": "0.3.3",
         "news": {
+            "0.3.3": {
+                "en": "Bugfix async/await function",
+                "de": "Bugfix Async/Wait-Funktion",
+                "ru": "Исправление ошибок функции async / await",
+                "pt": "Função assíncrona / aguardar correção de bug",
+                "nl": "Bugfix asynchrone/wachtfunctie",
+                "fr": "Fonction async/attente de correction de bogue",
+                "it": "Bugfix funzione asincrona/attesa",
+                "es": "Corrección de errores de función asincrónica / de espera",
+                "pl": "Funkcja asynchroniczna/oczekiwania na naprawę błędów",
+                "zh-cn": "修正异步/等待功能"
+            },
             "0.3.2": {
                 "en": "Bugfix",
                 "de": "Fehlerbehebung",
