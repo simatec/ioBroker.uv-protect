@@ -1,657 +1,621 @@
 {
-    "common": {
-        "name": "uv-protect",
-        "version": "0.3.3",
-        "news": {
-            "0.3.3": {
-                "en": "Bugfix async/await function",
-                "de": "Bugfix Async/Wait-Funktion",
-                "ru": "Исправление ошибок функции async / await",
-                "pt": "Função assíncrona / aguardar correção de bug",
-                "nl": "Bugfix asynchrone/wachtfunctie",
-                "fr": "Fonction async/attente de correction de bogue",
-                "it": "Bugfix funzione asincrona/attesa",
-                "es": "Corrección de errores de función asincrónica / de espera",
-                "pl": "Funkcja asynchroniczna/oczekiwania na naprawę błędów",
-                "zh-cn": "修正异步/等待功能"
-            },
-            "0.3.2": {
-                "en": "Bugfix",
-                "de": "Fehlerbehebung",
-                "ru": "Исправлена ошибка",
-                "pt": "Bugfix",
-                "nl": "Bugfix",
-                "fr": "Correction d'un bug",
-                "it": "Risoluzione del problema",
-                "es": "Arreglo del fallo",
-                "pl": "Naprawa błędów",
-                "zh-cn": "错误修正"
-            },
-            "0.3.1": {
-                "en": "Date/time formatted",
-                "de": "Datum/Uhrzeit formatiert",
-                "ru": "Дата / время отформатированы",
-                "pt": "Data / hora formatada",
-                "nl": "Datum/tijd geformatteerd",
-                "fr": "Date/heure formatée",
-                "it": "Data/ora formattata",
-                "es": "Formato de fecha / hora",
-                "pl": "Sformatowana data/godzina",
-                "zh-cn": "日期/时间格式化"
-            },
-            "0.3.0": {
-                "en": "code cleaning, added translate to system language for states, Bugfix Timestamp, value formating, Dependencies updated, name for states updated",
-                "de": "Codebereinigung, Übersetzung in Systemsprache für Zustände hinzugefügt, Bugfix Timestamp, Wertformatierung, Abhängigkeiten aktualisiert, Name für Zustände aktualisiert",
-                "ru": "очистка кода, добавлен перевод состояний на системный язык, временная метка исправления ошибок, форматирование значений, зависимости обновлены, имя для состояний обновлено",
-                "pt": "limpeza de código, adicionado traduzir para o idioma do sistema para estados, Bugfix Timestamp, formatação de valor, Dependências atualizadas, nome para estados atualizados",
-                "nl": "code-opschoning, toegevoegde vertaling naar systeemtaal voor staten, bugfix-tijdstempel, waardeopmaak, afhankelijkheden bijgewerkt, naam voor staten bijgewerkt",
-                "fr": "nettoyage du code, ajout de la traduction dans la langue du système pour les états, horodatage de correction de bogue, formatage des valeurs, dépendances mises à jour, nom des états mis à jour",
-                "it": "pulizia del codice, aggiunta traduzione nella lingua di sistema per gli stati, bugfix Timestamp, formattazione del valore, dipendenze aggiornate, nome per gli stati aggiornato",
-                "es": "limpieza de código, traducción agregada al idioma del sistema para estados, marca de tiempo de corrección de errores, formateo de valores, dependencias actualizadas, nombre de estados actualizado",
-                "pl": "czyszczenie kodu, dodane tłumaczenie stanów na język systemu, znacznik czasu poprawki błędów, formatowanie wartości, aktualizacja zależności, aktualizacja nazw stanów",
-                "zh-cn": "代码清理，添加了状态的系统语言翻译，错误修复时间戳，值格式，更新了依赖项，更新了状态名称"
-            },
-            "0.2.3": {
-                "en": "apiKey auto encrypted",
-                "de": "apiKey automatisch verschlüsselt",
-                "ru": "apiKey автоматически зашифрован",
-                "pt": "apiKey criptografado automaticamente",
-                "nl": "apiKey automatisch versleuteld",
-                "fr": "apiKey crypté automatiquement",
-                "it": "apiKey auto crittografato",
-                "es": "apiKey encriptado automáticamente",
-                "pl": "Automatyczne szyfrowanie apiKey",
-                "zh-cn": "apiKey 自动加密"
-            },
-            "0.2.2": {
-                "en": "apiKey encrypted, fix async function",
-                "de": "apiKey verschlüsselt, asynchrone Funktion korrigiert",
-                "ru": "apiKey зашифрован, исправить асинхронную функцию",
-                "pt": "apiKey criptografado, corrigir função assíncrona",
-                "nl": "apiKey versleuteld, fix async-functie",
-                "fr": "apiKey chiffré, correction de la fonction asynchrone",
-                "it": "crittografata apiKey, correzione della funzione asincrona",
-                "es": "apiKey cifrado, corrige la función asíncrona",
-                "pl": "apiKey zaszyfrowane, napraw funkcję asynchroniczną",
-                "zh-cn": "apiKey加密，修复异步功能"
-            },
-            "0.2.1": {
-                "en": "Fix for latest Repo",
-                "de": "Fix für latest Repo",
-                "ru": "Исправить для последнего репо",
-                "pt": "Correção para o Repo mais recente",
-                "nl": "Oplossing voor de nieuwste opslagplaats",
-                "fr": "Correctif pour le dernier repo",
-                "it": "Correzione per l'ultimo Repo",
-                "es": "Arreglo para el último repositorio",
-                "pl": "Napraw najnowsze repozytorium",
-                "zh-cn": "修复最新的回购"
-            },
-            "0.2.0": {
-                "en": "jsonConfig for Admin5 added",
-                "de": "jsonConfig für Admin5 hinzugefügt",
-                "ru": "jsonConfig для Admin5 добавлен",
-                "pt": "jsonConfig para Admin5 adicionado",
-                "nl": "jsonConfig voor Admin5 toegevoegd",
-                "fr": "jsonConfig pour Admin5 ajouté",
-                "it": "jsonConfig per Admin5 aggiunto",
-                "es": "jsonConfig para Admin5 agregado",
-                "pl": "Dodano jsonConfig dla Admin5",
-                "zh-cn": "Admin5的jsonConfig已添加"
-            },
-            "0.1.0": {
-                "en": "first beta",
-                "de": "erste Beta",
-                "ru": "первая бета",
-                "pt": "primeiro beta",
-                "nl": "eerste bèta",
-                "fr": "première bêta",
-                "it": "prima beta",
-                "es": "primera beta",
-                "pl": "pierwsza beta",
-                "zh-cn": "第一个测试版"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版"
-            }
-        },
-        "title": "uv-protect",
-        "titleLang": {
-            "en": "uv-protect",
-            "de": "UV-Schutz",
-            "ru": "УФ-защита",
-            "pt": "UV-proteger",
-            "nl": "uv-bescherming",
-            "fr": "protection contre les uv",
-            "it": "protezione UV",
-            "es": "proteger uv",
-            "pl": "ochrona UV",
-            "zh-cn": "防紫外线"
-        },
-        "desc": {
-            "en": "UV-Protect from openUV-API",
-            "de": "UV-Protect vor openUV-API",
-            "ru": "УФ-защита от openUV-API",
-            "pt": "UV-Protect da openUV-API",
-            "nl": "UV-bescherming tegen openUV-API",
-            "fr": "UV-Protect de openUV-API",
-            "it": "Protezione UV da openUV-API",
-            "es": "Protección UV de openUV-API",
-            "pl": "Ochrona UV przed openUV-API",
-            "zh-cn": "来自openUV-API的UV保护"
-        },
-        "authors": [
-            "simatec <nais@gmx.net>"
-        ],
-        "keywords": [
-            "UV-Protect",
-            "UV",
-            "openUV",
-            "Ozone"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "icon": "uv-protect.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.uv-protect/master/admin/uv-protect.png",
-        "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
-        "loglevel": "info",
-        "mode": "schedule",
-        "schedule": "*/60 * * * *",
-        "allowInit": true,
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "type": "weather",
-        "compact": true,
-        "materialize": true,
-        "supportCustoms": false,
-        "dependencies": [
-            {
-                "js-controller": ">=3.0.0"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=4.0.9"
-            }
-        ],
-        "jsonConfig": true,
-        "adminUI": {
-            "config": "json"
-        }
+  "common": {
+    "name": "uv-protect",
+    "version": "0.3.4",
+    "news": {
+      "0.3.4": {
+        "en": "Dependencies updated\ntest and release updated",
+        "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
+        "ru": "Зависимости обновлены\nтест и выпуск обновлены",
+        "pt": "Dependências atualizadas\nteste e lançamento atualizados",
+        "nl": "Afhankelijkheden bijgewerkt\ntest en release bijgewerkt",
+        "fr": "Dépendances mises à jour\ntest et version mis à jour",
+        "it": "Dipendenze aggiornate\ntest e rilascio aggiornati",
+        "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
+        "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
+        "zh-cn": "更新了依赖项\n测试和发布更新"
+      },
+      "0.3.3": {
+        "en": "Bugfix async/await function",
+        "de": "Bugfix Async/Wait-Funktion",
+        "ru": "Исправление ошибок функции async / await",
+        "pt": "Função assíncrona / aguardar correção de bug",
+        "nl": "Bugfix asynchrone/wachtfunctie",
+        "fr": "Fonction async/attente de correction de bogue",
+        "it": "Bugfix funzione asincrona/attesa",
+        "es": "Corrección de errores de función asincrónica / de espera",
+        "pl": "Funkcja asynchroniczna/oczekiwania na naprawę błędów",
+        "zh-cn": "修正异步/等待功能"
+      },
+      "0.3.2": {
+        "en": "Bugfix",
+        "de": "Fehlerbehebung",
+        "ru": "Исправлена ошибка",
+        "pt": "Bugfix",
+        "nl": "Bugfix",
+        "fr": "Correction d'un bug",
+        "it": "Risoluzione del problema",
+        "es": "Arreglo del fallo",
+        "pl": "Naprawa błędów",
+        "zh-cn": "错误修正"
+      },
+      "0.3.1": {
+        "en": "Date/time formatted",
+        "de": "Datum/Uhrzeit formatiert",
+        "ru": "Дата / время отформатированы",
+        "pt": "Data / hora formatada",
+        "nl": "Datum/tijd geformatteerd",
+        "fr": "Date/heure formatée",
+        "it": "Data/ora formattata",
+        "es": "Formato de fecha / hora",
+        "pl": "Sformatowana data/godzina",
+        "zh-cn": "日期/时间格式化"
+      },
+      "0.3.0": {
+        "en": "code cleaning, added translate to system language for states, Bugfix Timestamp, value formating, Dependencies updated, name for states updated",
+        "de": "Codebereinigung, Übersetzung in Systemsprache für Zustände hinzugefügt, Bugfix Timestamp, Wertformatierung, Abhängigkeiten aktualisiert, Name für Zustände aktualisiert",
+        "ru": "очистка кода, добавлен перевод состояний на системный язык, временная метка исправления ошибок, форматирование значений, зависимости обновлены, имя для состояний обновлено",
+        "pt": "limpeza de código, adicionado traduzir para o idioma do sistema para estados, Bugfix Timestamp, formatação de valor, Dependências atualizadas, nome para estados atualizados",
+        "nl": "code-opschoning, toegevoegde vertaling naar systeemtaal voor staten, bugfix-tijdstempel, waardeopmaak, afhankelijkheden bijgewerkt, naam voor staten bijgewerkt",
+        "fr": "nettoyage du code, ajout de la traduction dans la langue du système pour les états, horodatage de correction de bogue, formatage des valeurs, dépendances mises à jour, nom des états mis à jour",
+        "it": "pulizia del codice, aggiunta traduzione nella lingua di sistema per gli stati, bugfix Timestamp, formattazione del valore, dipendenze aggiornate, nome per gli stati aggiornato",
+        "es": "limpieza de código, traducción agregada al idioma del sistema para estados, marca de tiempo de corrección de errores, formateo de valores, dependencias actualizadas, nombre de estados actualizado",
+        "pl": "czyszczenie kodu, dodane tłumaczenie stanów na język systemu, znacznik czasu poprawki błędów, formatowanie wartości, aktualizacja zależności, aktualizacja nazw stanów",
+        "zh-cn": "代码清理，添加了状态的系统语言翻译，错误修复时间戳，值格式，更新了依赖项，更新了状态名称"
+      },
+      "0.2.3": {
+        "en": "apiKey auto encrypted",
+        "de": "apiKey automatisch verschlüsselt",
+        "ru": "apiKey автоматически зашифрован",
+        "pt": "apiKey criptografado automaticamente",
+        "nl": "apiKey automatisch versleuteld",
+        "fr": "apiKey crypté automatiquement",
+        "it": "apiKey auto crittografato",
+        "es": "apiKey encriptado automáticamente",
+        "pl": "Automatyczne szyfrowanie apiKey",
+        "zh-cn": "apiKey 自动加密"
+      },
+      "0.2.2": {
+        "en": "apiKey encrypted, fix async function",
+        "de": "apiKey verschlüsselt, asynchrone Funktion korrigiert",
+        "ru": "apiKey зашифрован, исправить асинхронную функцию",
+        "pt": "apiKey criptografado, corrigir função assíncrona",
+        "nl": "apiKey versleuteld, fix async-functie",
+        "fr": "apiKey chiffré, correction de la fonction asynchrone",
+        "it": "crittografata apiKey, correzione della funzione asincrona",
+        "es": "apiKey cifrado, corrige la función asíncrona",
+        "pl": "apiKey zaszyfrowane, napraw funkcję asynchroniczną",
+        "zh-cn": "apiKey加密，修复异步功能"
+      }
     },
-    "native": {
-        "systemGeoData": true,
-        "longitude": "",
-        "latitude": ""
+    "title": "uv-protect",
+    "titleLang": {
+      "en": "uv-protect",
+      "de": "UV-Schutz",
+      "ru": "УФ-защита",
+      "pt": "UV-proteger",
+      "nl": "uv-bescherming",
+      "fr": "protection contre les uv",
+      "it": "protezione UV",
+      "es": "proteger uv",
+      "pl": "ochrona UV",
+      "zh-cn": "防紫外线"
     },
-    "encryptedNative": [
-        "apiKey"
+    "desc": {
+      "en": "UV-Protect from openUV-API",
+      "de": "UV-Protect vor openUV-API",
+      "ru": "УФ-защита от openUV-API",
+      "pt": "UV-Protect da openUV-API",
+      "nl": "UV-bescherming tegen openUV-API",
+      "fr": "UV-Protect de openUV-API",
+      "it": "Protezione UV da openUV-API",
+      "es": "Protección UV de openUV-API",
+      "pl": "Ochrona UV przed openUV-API",
+      "zh-cn": "来自openUV-API的UV保护"
+    },
+    "authors": [
+      "simatec <nais@gmx.net>"
     ],
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "safe_exposure_time",
-            "type": "channel",
-            "common": {
-                "name": "safe exposure time for Fitzpatrick Skin Types"
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info",
-            "type": "channel",
-            "common": {
-                "name": "courtesy of suncalc"
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times",
-            "type": "channel",
-            "common": {
-                "name": "sun times"
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_position",
-            "type": "channel",
-            "common": {
-                "name": "sun position"
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "UV Index (real-time or forecasted depending on dt parameter)",
-                "type": "number",
-                "unit": "mW/m²",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_time",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "UV Index datetime in UTC",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_max",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "max UV Index for the day (at solar noon)",
-                "type": "number",
-                "unit": "mW/m²",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_max_time",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "max UV Index datetime (solar noon) in UTC",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "ozone",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "ozone level in du (Dobson Units) from OMI data or request",
-                "type": "number",
-                "unit": "DU",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "ozone_time",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "Latest OMI ozone update datetime in UTC",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st1",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 1",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st2",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 2",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st3",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 3",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st4",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 4",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st5",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 5",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "safe_exposure_time.st6",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "safe exposure time (mins) till burn for Skin Type 6",
-                "type": "number",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.solarNoon",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "solar noon (sun is in the highest position)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.nadir",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "nadir (darkest moment of the night, sun is in the lowest position) ",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.sunrise",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sunrise (top edge of the sun appears on the horizon)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.sunset",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sunset starts (bottom edge of the sun touches the horizon)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.sunriseEnd",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sunrise ends (bottom edge of the sun touches the horizon)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.sunsetStart",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sunset starts (bottom edge of the sun touches the horizon)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.dawn",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "dawn (morning nautical twilight ends, morning civil twilight starts) ",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.dusk",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "dusk (evening nautical twilight starts)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.nauticalDawn",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "nautical dawn (morning nautical twilight starts)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.nauticalDusk",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "nautical dusk (evening astronomical twilight starts)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.nightEnd",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "night ends (morning astronomical twilight starts)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.night",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "night starts (dark enough for astronomical observations)",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.goldenHourEnd",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "morning golden hour (soft light, best time for photography) ends",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_times.goldenHour",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "evening golden hour starts",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_position.azimuth",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sun azimuth in radians",
-                "type": "number",
-                "unit": "°",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "sun_info.sun_position.altitude",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "sun altitude above the horizon in radians",
-                "type": "number",
-                "unit": "°",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_json",
-            "type": "state",
-            "common": {
-                "role": "json",
-                "name": "json uv",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_level",
-            "type": "state",
-            "common": {
-                "role": "indicator",
-                "name": "UV Level",
-                "type": "string",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_alert",
-            "type": "state",
-            "common": {
-                "role": "switch",
-                "name": "UV Alert",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        },
-        {
-            "_id": "uv_warn",
-            "type": "state",
-            "common": {
-                "role": "switch",
-                "name": "UV Warn",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": ""
-            },
-            "native": {}
-        }
-    ]
+    "keywords": [
+      "UV-Protect",
+      "UV",
+      "openUV",
+      "Ozone"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "uv-protect.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.uv-protect/master/admin/uv-protect.png",
+    "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "schedule",
+    "schedule": "*/60 * * * *",
+    "allowInit": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "type": "weather",
+    "compact": true,
+    "materialize": true,
+    "supportCustoms": false,
+    "dependencies": [
+      {
+        "js-controller": ">=3.0.0"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=4.0.9"
+      }
+    ],
+    "jsonConfig": true,
+    "adminUI": {
+      "config": "json"
+    }
+  },
+  "native": {
+    "systemGeoData": true,
+    "longitude": "",
+    "latitude": ""
+  },
+  "encryptedNative": [
+    "apiKey"
+  ],
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "safe_exposure_time",
+      "type": "channel",
+      "common": {
+        "name": "safe exposure time for Fitzpatrick Skin Types"
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info",
+      "type": "channel",
+      "common": {
+        "name": "courtesy of suncalc"
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times",
+      "type": "channel",
+      "common": {
+        "name": "sun times"
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_position",
+      "type": "channel",
+      "common": {
+        "name": "sun position"
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "UV Index (real-time or forecasted depending on dt parameter)",
+        "type": "number",
+        "unit": "mW/m²",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_time",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "UV Index datetime in UTC",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_max",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "max UV Index for the day (at solar noon)",
+        "type": "number",
+        "unit": "mW/m²",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_max_time",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "max UV Index datetime (solar noon) in UTC",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "ozone",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "ozone level in du (Dobson Units) from OMI data or request",
+        "type": "number",
+        "unit": "DU",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "ozone_time",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "Latest OMI ozone update datetime in UTC",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st1",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 1",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st2",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 2",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st3",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 3",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st4",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 4",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st5",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 5",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "safe_exposure_time.st6",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "safe exposure time (mins) till burn for Skin Type 6",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.solarNoon",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "solar noon (sun is in the highest position)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.nadir",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "nadir (darkest moment of the night, sun is in the lowest position) ",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.sunrise",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sunrise (top edge of the sun appears on the horizon)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.sunset",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sunset starts (bottom edge of the sun touches the horizon)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.sunriseEnd",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sunrise ends (bottom edge of the sun touches the horizon)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.sunsetStart",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sunset starts (bottom edge of the sun touches the horizon)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.dawn",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "dawn (morning nautical twilight ends, morning civil twilight starts) ",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.dusk",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "dusk (evening nautical twilight starts)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.nauticalDawn",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "nautical dawn (morning nautical twilight starts)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.nauticalDusk",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "nautical dusk (evening astronomical twilight starts)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.nightEnd",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "night ends (morning astronomical twilight starts)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.night",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "night starts (dark enough for astronomical observations)",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.goldenHourEnd",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "morning golden hour (soft light, best time for photography) ends",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_times.goldenHour",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "evening golden hour starts",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_position.azimuth",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sun azimuth in radians",
+        "type": "number",
+        "unit": "°",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "sun_info.sun_position.altitude",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "sun altitude above the horizon in radians",
+        "type": "number",
+        "unit": "°",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_json",
+      "type": "state",
+      "common": {
+        "role": "json",
+        "name": "json uv",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_level",
+      "type": "state",
+      "common": {
+        "role": "indicator",
+        "name": "UV Level",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_alert",
+      "type": "state",
+      "common": {
+        "role": "switch",
+        "name": "UV Alert",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "uv_warn",
+      "type": "state",
+      "common": {
+        "role": "switch",
+        "name": "UV Warn",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    }
+  ]
 }
