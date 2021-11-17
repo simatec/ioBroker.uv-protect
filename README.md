@@ -4,12 +4,12 @@
 [![NPM version](http://img.shields.io/npm/v/iobroker.uv-protect.svg)](https://www.npmjs.com/package/iobroker.uv-protect)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.uv-protect.svg)](https://www.npmjs.com/package/iobroker.uv-protect)
 ![Number of Installations (latest)](http://iobroker.live/badges/uv-protect-installed.svg)
+![Number of Installations (stable)](http://iobroker.live/badges/uv-protect-stable.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/simatec/ioBroker.uv-protect/badge.svg)](https://snyk.io/test/github/simatec/ioBroker.uv-protect)
 ![Test and Release](https://github.com/simatec/ioBroker.uv-protect/workflows/Test%20and%20Release/badge.svg)
 
 [![NPM](https://nodei.co/npm/iobroker.uv-protect.png?downloads=true)](https://nodei.co/npm/iobroker.uv-protect/)
 
-<!--![Number of Installations (stable)](http://iobroker.live/badges/uv-protect-stable.svg)-->
 
 ## uv-protect adapter for ioBroker
 
