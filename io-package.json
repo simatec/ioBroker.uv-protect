@@ -206,7 +206,7 @@
         "unit": "mW/m²",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -233,7 +233,7 @@
         "unit": "mW/m²",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -260,7 +260,7 @@
         "unit": "DU",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -286,7 +286,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -299,7 +299,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -312,7 +312,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -325,7 +325,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -338,7 +338,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -351,7 +351,7 @@
         "type": "number",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -547,7 +547,7 @@
         "unit": "°",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -561,7 +561,7 @@
         "unit": "°",
         "read": true,
         "write": false,
-        "def": ""
+        "def": 0
       },
       "native": {}
     },
@@ -600,7 +600,7 @@
         "type": "boolean",
         "read": true,
         "write": false,
-        "def": ""
+        "def": false
       },
       "native": {}
     },
@@ -613,7 +613,7 @@
         "type": "boolean",
         "read": true,
         "write": false,
-        "def": ""
+        "def": false
       },
       "native": {}
     }

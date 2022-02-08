@@ -12,10 +12,6 @@ let stopTimer;
 
 let systemLang = 'de'; // system language
 
-/**
- * The adapter instance
- * @type {ioBroker.Adapter}
- */
 let adapter;
 const adapterName = require('./package.json').name.split('.').pop();
 
@@ -82,7 +78,7 @@ async function requestAPI() {
 
             const openUVRequest = await axios({
                 method: 'get',
-                baseURL: openUVURL,
+                url: openUVURL,
                 params: {
                     lat: latitude,
                     lng: longitude
