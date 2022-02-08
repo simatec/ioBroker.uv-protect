@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "news": {
+      "0.3.5": {
+        "en": "Fix value types\nFix Axios Request\nDependencies updated",
+        "de": "Wertetypen fixieren\nAxios-Anfrage beheben\nAbhängigkeiten aktualisiert",
+        "ru": "Исправление типов значений\nИсправить запрос Axios\nЗависимости обновлены",
+        "pt": "Tipos de valor fixo\nCorrigir solicitação do Axios\nDependências atualizadas",
+        "nl": "Waardetypen corrigeren\nAxios-verzoek repareren\nAfhankelijkheden bijgewerkt",
+        "fr": "Fixer les types de valeur\nCorrection de la requête Axios\nDépendances mises à jour",
+        "it": "Correggi i tipi di valore\nCorreggi la richiesta di Axios\nDipendenze aggiornate",
+        "es": "Tipos de valores fijos\nReparar solicitud de Axios\nDependencias actualizadas",
+        "pl": "Ustal typy wartości\nNapraw żądanie Axios\nZaktualizowano zależności",
+        "zh-cn": "固定值类型\n修复 Axios 请求\n已更新依赖项"
+      },
       "0.3.4": {
         "en": "Dependencies updated\ntest and release updated",
         "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
@@ -74,18 +86,6 @@
         "es": "apiKey encriptado automáticamente",
         "pl": "Automatyczne szyfrowanie apiKey",
         "zh-cn": "apiKey 自动加密"
-      },
-      "0.2.2": {
-        "en": "apiKey encrypted, fix async function",
-        "de": "apiKey verschlüsselt, asynchrone Funktion korrigiert",
-        "ru": "apiKey зашифрован, исправить асинхронную функцию",
-        "pt": "apiKey criptografado, corrigir função assíncrona",
-        "nl": "apiKey versleuteld, fix async-functie",
-        "fr": "apiKey chiffré, correction de la fonction asynchrone",
-        "it": "crittografata apiKey, correzione della funzione asincrona",
-        "es": "apiKey cifrado, corrige la función asíncrona",
-        "pl": "apiKey zaszyfrowane, napraw funkcję asynchroniczną",
-        "zh-cn": "apiKey加密，修复异步功能"
       }
     },
     "title": "uv-protect",
