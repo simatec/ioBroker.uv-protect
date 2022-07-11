@@ -131,7 +131,7 @@
     "readme": "https://github.com/simatec/ioBroker.uv-protect/blob/master/README.md",
     "loglevel": "info",
     "mode": "schedule",
-    "schedule": "*/60 * * * *",
+    "schedule": "38 * * * *",
     "allowInit": true,
     "connectionType": "cloud",
     "dataSource": "poll",

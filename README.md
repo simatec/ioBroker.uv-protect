@@ -33,6 +33,11 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) Fix Request
+* (simatec) timeout added
+* (simatec) Dependencies updated
+
 ### 0.3.5 (2022-02-08)
 * (simatec) Fix value types
 * (simatec) Fix Axios Request
