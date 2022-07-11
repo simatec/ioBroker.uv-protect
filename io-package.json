@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "news": {
+      "0.3.6": {
+        "en": "Fix Request\ntimeout added\nDependencies updated",
+        "de": "Fehlersuche\ntimeout hinzugefügt\nAusgaben aktualisiert",
+        "ru": "Fix Запрос\ntimeout добавлено\nОбновленные зависимости",
+        "pt": "Pedido de Fixação\ntimeout adicionado\nDependências atualizadas",
+        "nl": "Verzoek\nvertaling:\nAfhankelijkheid geüpdateerd",
+        "fr": "Demande de réparation\ntimeout ajouté\nDépendances mises à jour",
+        "it": "Fissare la richiesta\ntimeout aggiunto\nDipendenze aggiornate",
+        "es": "Solicitud fija\ntiempo añadido\nActualización de las dependencias",
+        "pl": "Fix Request (ang.)\ndodać\nZależności",
+        "zh-cn": "请求\n增加时间\nB. 更新的属地"
+      },
       "0.3.5": {
         "en": "Fix value types\nFix Axios Request\nDependencies updated",
         "de": "Wertetypen fixieren\nAxios-Anfrage beheben\nAbhängigkeiten aktualisiert",
@@ -74,18 +86,6 @@
         "es": "limpieza de código, traducción agregada al idioma del sistema para estados, marca de tiempo de corrección de errores, formateo de valores, dependencias actualizadas, nombre de estados actualizado",
         "pl": "czyszczenie kodu, dodane tłumaczenie stanów na język systemu, znacznik czasu poprawki błędów, formatowanie wartości, aktualizacja zależności, aktualizacja nazw stanów",
         "zh-cn": "代码清理，添加了状态的系统语言翻译，错误修复时间戳，值格式，更新了依赖项，更新了状态名称"
-      },
-      "0.2.3": {
-        "en": "apiKey auto encrypted",
-        "de": "apiKey automatisch verschlüsselt",
-        "ru": "apiKey автоматически зашифрован",
-        "pt": "apiKey criptografado automaticamente",
-        "nl": "apiKey automatisch versleuteld",
-        "fr": "apiKey crypté automatiquement",
-        "it": "apiKey auto crittografato",
-        "es": "apiKey encriptado automáticamente",
-        "pl": "Automatyczne szyfrowanie apiKey",
-        "zh-cn": "apiKey 自动加密"
       }
     },
     "title": "uv-protect",
