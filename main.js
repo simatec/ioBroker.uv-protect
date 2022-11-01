@@ -3,7 +3,7 @@
 // @ts-ignore
 const utils = require('@iobroker/adapter-core');
 // @ts-ignore
-const axios = require('axios').default;
+const axios = require('axios');
 const tools = require('./lib/tools');
 
 let longitude;
