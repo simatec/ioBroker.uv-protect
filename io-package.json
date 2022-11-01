@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "news": {
+      "0.3.7": {
+        "en": "Fix Axios Request\nDependencies updated",
+        "de": "Fix Axios Anfrage\nAusgaben aktualisiert",
+        "ru": "Fix Запрос Axios\nОбновленные зависимости",
+        "pt": "Corrigir pedido de axios\nDependências atualizadas",
+        "nl": "Vertaling:\nAfhankelijkheid geüpdateerd",
+        "fr": "Demande de réparation Axios\nDépendances mises à jour",
+        "it": "Richiesta di Axios\nDipendenze aggiornate",
+        "es": "Solicitud de Axios Fijo\nActualización de las dependencias",
+        "pl": "Fix Axios Request (ang.)\nZależności",
+        "uk": "Довідка Axios\nЗалежність оновлено",
+        "zh-cn": "Fix Axios请求\nB. 更新的属地"
+      },
       "0.3.6": {
         "en": "Fix Request\ntimeout added\nDependencies updated",
         "de": "Fehlersuche\ntimeout hinzugefügt\nAusgaben aktualisiert",
@@ -74,18 +87,6 @@
         "es": "Formato de fecha / hora",
         "pl": "Sformatowana data/godzina",
         "zh-cn": "日期/时间格式化"
-      },
-      "0.3.0": {
-        "en": "code cleaning, added translate to system language for states, Bugfix Timestamp, value formating, Dependencies updated, name for states updated",
-        "de": "Codebereinigung, Übersetzung in Systemsprache für Zustände hinzugefügt, Bugfix Timestamp, Wertformatierung, Abhängigkeiten aktualisiert, Name für Zustände aktualisiert",
-        "ru": "очистка кода, добавлен перевод состояний на системный язык, временная метка исправления ошибок, форматирование значений, зависимости обновлены, имя для состояний обновлено",
-        "pt": "limpeza de código, adicionado traduzir para o idioma do sistema para estados, Bugfix Timestamp, formatação de valor, Dependências atualizadas, nome para estados atualizados",
-        "nl": "code-opschoning, toegevoegde vertaling naar systeemtaal voor staten, bugfix-tijdstempel, waardeopmaak, afhankelijkheden bijgewerkt, naam voor staten bijgewerkt",
-        "fr": "nettoyage du code, ajout de la traduction dans la langue du système pour les états, horodatage de correction de bogue, formatage des valeurs, dépendances mises à jour, nom des états mis à jour",
-        "it": "pulizia del codice, aggiunta traduzione nella lingua di sistema per gli stati, bugfix Timestamp, formattazione del valore, dipendenze aggiornate, nome per gli stati aggiornato",
-        "es": "limpieza de código, traducción agregada al idioma del sistema para estados, marca de tiempo de corrección de errores, formateo de valores, dependencias actualizadas, nombre de estados actualizado",
-        "pl": "czyszczenie kodu, dodane tłumaczenie stanów na język systemu, znacznik czasu poprawki błędów, formatowanie wartości, aktualizacja zależności, aktualizacja nazw stanów",
-        "zh-cn": "代码清理，添加了状态的系统语言翻译，错误修复时间戳，值格式，更新了依赖项，更新了状态名称"
       }
     },
     "title": "uv-protect",
