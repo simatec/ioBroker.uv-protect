@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.3.7",
+    "version": "0.4.0",
     "news": {
+      "0.4.0": {
+        "en": "Dependencies updated\nRepo updated",
+        "de": "Ausgaben aktualisiert\nRepo aktualisiert",
+        "ru": "Обновленные зависимости\nРепо обновлен",
+        "pt": "Dependências atualizadas\nRepo atualizado",
+        "nl": "Afhankelijkheid geüpdateerd\nVertaling:",
+        "fr": "Dépendances mises à jour\nRepo updated",
+        "it": "Dipendenze aggiornate\nRepo aggiornato",
+        "es": "Actualización de las dependencias\nRepo updated",
+        "pl": "Zależności\nRepo updated",
+        "uk": "Залежність оновлено\nRepo оновлений",
+        "zh-cn": "B. 更新的属地\n更新"
+      },
       "0.3.7": {
         "en": "Fix Axios Request\nDependencies updated",
         "de": "Fix Axios Anfrage\nAusgaben aktualisiert",
@@ -75,18 +88,6 @@
         "es": "Arreglo del fallo",
         "pl": "Naprawa błędów",
         "zh-cn": "错误修正"
-      },
-      "0.3.1": {
-        "en": "Date/time formatted",
-        "de": "Datum/Uhrzeit formatiert",
-        "ru": "Дата / время отформатированы",
-        "pt": "Data / hora formatada",
-        "nl": "Datum/tijd geformatteerd",
-        "fr": "Date/heure formatée",
-        "it": "Data/ora formattata",
-        "es": "Formato de fecha / hora",
-        "pl": "Sformatowana data/godzina",
-        "zh-cn": "日期/时间格式化"
       }
     },
     "title": "uv-protect",
