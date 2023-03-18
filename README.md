@@ -33,6 +33,10 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) Dependencies updated
+* (simatec) Repo updated
+
 ### 0.3.7 (2022-11-01)
 * (simatec) Fix Axios Request
 * (simatec) Dependencies updated
@@ -90,7 +94,7 @@ When the adapter crashes or an other Code error happens, this error message that
 ## License
 MIT License
 
-Copyright (c) 2021 - 2022 simatec
+Copyright (c) 2021 - 2023 simatec
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
