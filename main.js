@@ -61,9 +61,9 @@ function startAdapter(options) {
 */
 function getSystemData() {
     // @ts-ignore
-    return new Promise(async (resolve) => {
+    return new Promise(async (resolve, reject) => {
         try {
-            const obj = await adapter.getForeignObjectAsync('system.config', 'state');
+            const obj = await adapter.getForeignObjectAsync('system.config');
 
             if (obj) {
                 systemLang = obj.common.language;
@@ -88,6 +88,7 @@ function getSystemData() {
             }
         } catch (err) {
             adapter.log.warn('system settings cannot be called up. Please check configuration!');
+            reject();
         }
     });
 }
@@ -215,7 +216,7 @@ async function main() {
     await getSystemData();
 
     if (adapter.config.apiKey && longitude && latitude) {
-        const obj = await adapter.getForeignObjectAsync('system.config', 'state');
+        const obj = await adapter.getForeignObjectAsync('system.config');
 
         if (obj) {
             await requestAPI();
