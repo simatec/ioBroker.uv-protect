@@ -17,8 +17,32 @@ const adapterName = require('./package.json').name.split('.').pop();
 
 /**
  * Starts the adapter instance
- * @param {Partial<utils.AdapterOptions>} [options]
+ * @param {Partial<ioBroker.AdapterOptions>} [options]
  */
+
+function startAdapter(options) {
+
+    options = options || {};
+    Object.assign(options, { name: adapterName, useFormatDate: true, });
+
+    // @ts-ignore
+    adapter = new utils.Adapter(options);
+
+    adapter.on('ready', main);
+
+    adapter.on('unload', (callback) => {
+        try {
+            clearTimeout(stopTimer);
+            callback();
+        } catch (e) {
+            callback();
+        }
+    });
+
+    return adapter;
+}
+
+/*
 function startAdapter(options) {
     return adapter = utils.adapter(Object.assign({}, options, {
         name: adapterName,
@@ -34,7 +58,7 @@ function startAdapter(options) {
         },
     }));
 }
-
+*/
 function getSystemData() {
     // @ts-ignore
     return new Promise(async (resolve) => {
@@ -76,6 +100,7 @@ async function requestAPI() {
 
             const openUVURL = 'https://api.openuv.io/api/v1/uv';
 
+            // @ts-ignore
             const openUVRequest = await axios({
                 method: 'get',
                 url: openUVURL,
