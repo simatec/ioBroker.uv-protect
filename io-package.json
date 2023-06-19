@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "news": {
+      "0.4.1": {
+        "en": "Dependencies updated\nFix Adapter Stop",
+        "de": "Ausgaben aktualisiert\nAdapter stoppen",
+        "ru": "Обновленные зависимости\nFix адаптер Stop",
+        "pt": "Dependências atualizadas\nFix Adapter Stop",
+        "nl": "Afhankelijkheid geüpdateerd\nVertaling:",
+        "fr": "Dépendances mises à jour\nArrêt de l ' adaptateur",
+        "it": "Dipendenze aggiornate\nBlocco dell'adattatore",
+        "es": "Actualización de las dependencias\nParada de adaptador fijo",
+        "pl": "Zależności\nFix Adapter",
+        "uk": "Залежність оновлено\nВиправлення адаптера Зупинка",
+        "zh-cn": "B. 更新的属地\nFix Adapter"
+      },
       "0.4.0": {
         "en": "Dependencies updated\nRepo updated",
         "de": "Ausgaben aktualisiert\nRepo aktualisiert",
@@ -76,18 +89,6 @@
         "es": "Corrección de errores de función asincrónica / de espera",
         "pl": "Funkcja asynchroniczna/oczekiwania na naprawę błędów",
         "zh-cn": "修正异步/等待功能"
-      },
-      "0.3.2": {
-        "en": "Bugfix",
-        "de": "Fehlerbehebung",
-        "ru": "Исправлена ошибка",
-        "pt": "Bugfix",
-        "nl": "Bugfix",
-        "fr": "Correction d'un bug",
-        "it": "Risoluzione del problema",
-        "es": "Arreglo del fallo",
-        "pl": "Naprawa błędów",
-        "zh-cn": "错误修正"
       }
     },
     "title": "uv-protect",
