@@ -2,12 +2,12 @@
     "API Key": "API密钥",
     "Get the API key from open.io": "从open.io获取API密钥",
     "Use astro data from the system settings": "使用系统设置中的astro数据",
+    "extreme": "极端",
+    "high": "高的",
     "latitude": "纬度",
     "longitude": "经度",
-    "uv-protect adapter settings": "uv-protect的适配器设置",
     "low": "低的",
     "moderate": "缓和",
-    "high": "高的",
-    "very high": "很高",
-    "extreme": "极端"
+    "uv-protect adapter settings": "uv-protect的适配器设置",
+    "very high": "很高"
 }

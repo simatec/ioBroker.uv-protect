@@ -102,6 +102,7 @@
       "it": "protezione UV",
       "es": "proteger uv",
       "pl": "ochrona UV",
+      "uk": "Захист від ультрафіолету",
       "zh-cn": "防紫外线"
     },
     "desc": {
@@ -114,10 +115,11 @@
       "it": "Protezione UV da openUV-API",
       "es": "Protección UV de openUV-API",
       "pl": "Ochrona UV przed openUV-API",
+      "uk": "Захист від ультрафіолету з openUV-API",
       "zh-cn": "来自openUV-API的UV保护"
     },
     "authors": [
-      "simatec <nais@gmx.net>"
+      "simatec <uv-protect@simateccloud.de>"
     ],
     "keywords": [
       "UV-Protect",
