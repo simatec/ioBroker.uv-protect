@@ -1,7 +1,7 @@
 /*global systemDictionary:true */
 'use strict';
 
-systemDictionary = {
+var _systemDictionary = {
     "API Key": {                                     "en": "API Key",                                         "de": "API Key",                                         "ru": "Ключ API",                                        "pt": "Chave API",                                       "nl": "API sleutel",                                     "fr": "clé API",                                         "it": "Chiave API",                                      "es": "Clave API",                                       "pl": "Klucz API",                                       "uk": "Ключ API",                                        "zh-cn": "API密钥"},
     "Get the API key from open.io": {                "en": "Get the API key from open.io",                    "de": "Holen Sie sich den API Key von open.io",          "ru": "Получите ключ API из open.io",                    "pt": "Obtenha a chave de API em open.io",               "nl": "Haal de API-sleutel op van open.io",              "fr": "Obtenez la clé API de open.io",                   "it": "Ottieni la chiave API da open.io",                "es": "Obtenga la clave API de open.io",                 "pl": "Uzyskaj klucz API z open.io",                     "uk": "Отримайте ключ API з open.io",                    "zh-cn": "从open.io获取API密钥"},
     "Use astro data from the system settings": {     "en": "Use astro data from the system settings",         "de": "Astro-Daten aus den Systemeinstellungen verwenden", "ru": "Использовать астрономические данные из системных настроек", "pt": "Use os dados astro das configurações do sistema", "nl": "Gebruik astrodata uit de systeeminstellingen",    "fr": "Utiliser les données astronomiques des paramètres système", "it": "Usa i dati astronomici dalle impostazioni di sistema", "es": "Usa datos astronómicos de la configuración del sistema", "pl": "Użyj danych astro z ustawień systemowych",        "uk": "Використовуйте астродані з налаштувань системи",  "zh-cn": "使用系统设置中的astro数据"},
@@ -14,3 +14,9 @@ systemDictionary = {
     "uv-protect adapter settings": {                 "en": "Adapter settings for uv-protect",                 "de": "Adaptereinstellungen für uv-protect",             "ru": "Настройки адаптера для uv-protect",               "pt": "Configurações do adaptador para uv-protect",      "nl": "Adapterinstellingen voor uv-protect",             "fr": "Paramètres d'adaptateur pour uv-protect",         "it": "Impostazioni dell'adattatore per uv-protect",     "es": "Ajustes del adaptador para uv-protect",           "pl": "Ustawienia adaptera dla uv-protect",              "uk": "Налаштування адаптера для uv-protect",            "zh-cn": "uv-protect的适配器设置"},
     "very high": {                                   "en": "very high",                                       "de": "sehr hoch",                                       "ru": "очень высоко",                                    "pt": "muito alto",                                      "nl": "heel hoog",                                       "fr": "très haut",                                       "it": "molto alto",                                      "es": "muy alto",                                        "pl": "bardzo wysoko",                                   "uk": "дуже високий",                                    "zh-cn": "很高"},
 };
+
+if (typeof module !== "undefined" && module.parent) {
+    module.exports = _systemDictionary;
+} else {
+   systemDictionary = _systemDictionary;
+}
