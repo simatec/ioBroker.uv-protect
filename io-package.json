@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "news": {
+      "0.4.2": {
+        "en": "Dependencies updated\ntest and release updated\nTranslation updated",
+        "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nÜbersetzung aktualisiert",
+        "ru": "Обновленные зависимости\nтест и релиз обновлен\nПеревод обновлен",
+        "pt": "Dependências atualizadas\nteste e lançamento atualizado\nTradução atualizada",
+        "nl": "Afhankelijkheid geüpdateerd\ntest en laat updaten\nVertaling:",
+        "fr": "Dépendances mises à jour\ntest and release updated\nTraduction mise à jour",
+        "it": "Dipendenze aggiornate\ntest e rilascio aggiornato\nTraduzione aggiornata",
+        "es": "Actualización de las dependencias\ntest and release updated\nTraducción actualizada",
+        "pl": "Zależności\ntest i aktualizacja\nUaktualniać",
+        "uk": "Залежність оновлено\nтест і реліз оновлений\nПереклад оновлений",
+        "zh-cn": "B. 更新的属地\n试验和释放\n笔译更新"
+      },
       "0.4.1": {
         "en": "Dependencies updated\nFix Adapter Stop",
         "de": "Ausgaben aktualisiert\nAdapter stoppen",
@@ -77,18 +90,6 @@
         "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
         "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
         "zh-cn": "更新了依赖项\n测试和发布更新"
-      },
-      "0.3.3": {
-        "en": "Bugfix async/await function",
-        "de": "Bugfix Async/Wait-Funktion",
-        "ru": "Исправление ошибок функции async / await",
-        "pt": "Função assíncrona / aguardar correção de bug",
-        "nl": "Bugfix asynchrone/wachtfunctie",
-        "fr": "Fonction async/attente de correction de bogue",
-        "it": "Bugfix funzione asincrona/attesa",
-        "es": "Corrección de errores de función asincrónica / de espera",
-        "pl": "Funkcja asynchroniczna/oczekiwania na naprawę błędów",
-        "zh-cn": "修正异步/等待功能"
       }
     },
     "title": "uv-protect",
