@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "news": {
+      "0.5.0": {
+        "en": "Dependencies updated\nFix units\nCode clean",
+        "de": "Ausgaben aktualisiert\nFeste Einheiten\nCode sauber",
+        "ru": "Обновленные зависимости\nFix единицы\nКод чистый",
+        "pt": "Dependências atualizadas\nUnidades fixas\nCódigo limpo",
+        "nl": "Afhankelijkheid geüpdateerd\nVertaling:\nCode schoon",
+        "fr": "Dépendances mises à jour\nUnités fixes\nCode propre",
+        "it": "Dipendenze aggiornate\nUnità di fissaggio\nCodice pulito",
+        "es": "Actualización de las dependencias\nUnidades fijas\nCódigo limpio",
+        "pl": "Zależności\nFix\nKodeks czysty",
+        "uk": "Залежність оновлено\nФіксатори\nКод очищення",
+        "zh-cn": "B. 更新的属地\n固定单位\n守则"
+      },
       "0.4.2": {
         "en": "Dependencies updated\ntest and release updated\nTranslation updated",
         "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nÜbersetzung aktualisiert",
@@ -78,18 +91,6 @@
         "es": "Tipos de valores fijos\nReparar solicitud de Axios\nDependencias actualizadas",
         "pl": "Ustal typy wartości\nNapraw żądanie Axios\nZaktualizowano zależności",
         "zh-cn": "固定值类型\n修复 Axios 请求\n已更新依赖项"
-      },
-      "0.3.4": {
-        "en": "Dependencies updated\ntest and release updated",
-        "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
-        "ru": "Зависимости обновлены\nтест и выпуск обновлены",
-        "pt": "Dependências atualizadas\nteste e lançamento atualizados",
-        "nl": "Afhankelijkheden bijgewerkt\ntest en release bijgewerkt",
-        "fr": "Dépendances mises à jour\ntest et version mis à jour",
-        "it": "Dipendenze aggiornate\ntest e rilascio aggiornati",
-        "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
-        "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
-        "zh-cn": "更新了依赖项\n测试和发布更新"
       }
     },
     "title": "uv-protect",
