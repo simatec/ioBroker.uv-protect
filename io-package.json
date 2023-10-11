@@ -209,7 +209,6 @@
         "role": "indicator",
         "name": "UV Index (real-time or forecasted depending on dt parameter)",
         "type": "number",
-        "unit": "mW/m²",
         "read": true,
         "write": false,
         "def": 0
@@ -236,7 +235,6 @@
         "role": "indicator",
         "name": "max UV Index for the day (at solar noon)",
         "type": "number",
-        "unit": "mW/m²",
         "read": true,
         "write": false,
         "def": 0

@@ -42,23 +42,6 @@ function startAdapter(options) {
     return adapter;
 }
 
-/*
-function startAdapter(options) {
-    return adapter = utils.adapter(Object.assign({}, options, {
-        name: adapterName,
-        ready: main,
-
-        unload: (callback) => {
-            try {
-                clearTimeout(stopTimer);
-                callback();
-            } catch (e) {
-                callback();
-            }
-        },
-    }));
-}
-*/
 function getSystemData() {
     // @ts-ignore
     return new Promise(async (resolve, reject) => {
