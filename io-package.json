@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "news": {
+      "0.5.1": {
+        "en": "Dependencies updated",
+        "de": "Ausgaben aktualisiert",
+        "ru": "Обновленные зависимости",
+        "pt": "Dependências atualizadas",
+        "nl": "Afhankelijkheid geüpdateerd",
+        "fr": "Dépendances mises à jour",
+        "it": "Dipendenze aggiornate",
+        "es": "Actualización de las dependencias",
+        "pl": "Zależności",
+        "uk": "Залежність оновлено",
+        "zh-cn": "B. 更新的属地"
+      },
       "0.5.0": {
         "en": "Dependencies updated\nFix units\nCode clean",
         "de": "Ausgaben aktualisiert\nFeste Einheiten\nCode sauber",
@@ -79,18 +92,6 @@
         "es": "Solicitud fija\ntiempo añadido\nActualización de las dependencias",
         "pl": "Fix Request (ang.)\ndodać\nZależności",
         "zh-cn": "请求\n增加时间\nB. 更新的属地"
-      },
-      "0.3.5": {
-        "en": "Fix value types\nFix Axios Request\nDependencies updated",
-        "de": "Wertetypen fixieren\nAxios-Anfrage beheben\nAbhängigkeiten aktualisiert",
-        "ru": "Исправление типов значений\nИсправить запрос Axios\nЗависимости обновлены",
-        "pt": "Tipos de valor fixo\nCorrigir solicitação do Axios\nDependências atualizadas",
-        "nl": "Waardetypen corrigeren\nAxios-verzoek repareren\nAfhankelijkheden bijgewerkt",
-        "fr": "Fixer les types de valeur\nCorrection de la requête Axios\nDépendances mises à jour",
-        "it": "Correggi i tipi di valore\nCorreggi la richiesta di Axios\nDipendenze aggiornate",
-        "es": "Tipos de valores fijos\nReparar solicitud de Axios\nDependencias actualizadas",
-        "pl": "Ustal typy wartości\nNapraw żądanie Axios\nZaktualizowano zależności",
-        "zh-cn": "固定值类型\n修复 Axios 请求\n已更新依赖项"
       }
     },
     "title": "uv-protect",
