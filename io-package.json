@@ -144,6 +144,7 @@
     "connectionType": "cloud",
     "dataSource": "poll",
     "type": "weather",
+    "tier": 2,
     "compact": true,
     "materialize": true,
     "supportCustoms": false,
