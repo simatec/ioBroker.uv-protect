@@ -91,10 +91,10 @@
         "it": "Fissare la richiesta\ntimeout aggiunto\nDipendenze aggiornate",
         "es": "Solicitud fija\ntiempo añadido\nActualización de las dependencias",
         "pl": "Fix Request (ang.)\ndodać\nZależności",
+        "uk": "Виправлення несправностей\nдодано тайм-аут\nоновлено вивід",
         "zh-cn": "请求\n增加时间\nB. 更新的属地"
       }
     },
-    "title": "uv-protect",
     "titleLang": {
       "en": "uv-protect",
       "de": "UV-Schutz",
