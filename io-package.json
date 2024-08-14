@@ -130,9 +130,11 @@
       "openUV",
       "Ozone"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "uv-protect.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.uv-protect/master/admin/uv-protect.png",
@@ -146,11 +148,10 @@
     "type": "weather",
     "tier": 2,
     "compact": true,
-    "materialize": true,
     "supportCustoms": false,
     "dependencies": [
       {
-        "js-controller": ">=4.0.0"
+        "js-controller": ">=5.0.19"
       }
     ],
     "globalDependencies": [
