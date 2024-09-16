@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "news": {
+      "0.6.1": {
+        "en": "Dependencies updated\ndev-server added\nRepo Check fix\nResponsive Design added",
+        "de": "Ausgaben aktualisiert\ndev-server hinzugefügt\nRepo Check fix\nResponsive Design hinzugefügt",
+        "ru": "Обновленные данные о зависимостях\nдобавлено dev-server\nРеконструкция\nResponsive Design",
+        "pt": "Dependências atualizadas\ndev-server adicionado\nRepo Check correção\nDesign responsivo adicionado",
+        "nl": "Afhankelijkheden bijgewerkt\ndev-server toegevoegd\nRepo Controle fix\nResponsive Design toegevoegd",
+        "fr": "Dépendances actualisées\ndev-server ajouté\nCorrection de la vérification de repo\nDesign sensible ajouté",
+        "it": "Dipendenze aggiornate\naggiunto\nRepo Check fix\nResponsive Design aggiunto",
+        "es": "Actualización de las dependencias\ndev-server añadido\nRepo Check fix\nDiseño responsable añadido",
+        "pl": "Aktualizacja zależności\ndev- server dodany\nSprawdź ponownie\nDodano projekt odpowiedzialny",
+        "uk": "Залежність оновлено\nдодано dev-server\nRepo Перевірити виправити\nДодано адаптивний дизайн",
+        "zh-cn": "更新的依赖关系\n添加了 dev 服务器\nRepo 检查修正\n添加响应设计"
+      },
       "0.6.0": {
         "en": "Dependencies updated\ngulp deleted\n@iobroker/adapter-dev\nTranslation updated",
         "de": "Ausgaben aktualisiert\ngulp gelöscht\n@iobroker/adapter-dev\nÜbersetzung aktualisiert",
@@ -80,19 +93,6 @@
         "pl": "Zależności\nRepo updated",
         "uk": "Залежність оновлено\nRepo оновлений",
         "zh-cn": "B. 更新的属地\n更新"
-      },
-      "0.3.7": {
-        "en": "Fix Axios Request\nDependencies updated",
-        "de": "Fix Axios Anfrage\nAusgaben aktualisiert",
-        "ru": "Fix Запрос Axios\nОбновленные зависимости",
-        "pt": "Corrigir pedido de axios\nDependências atualizadas",
-        "nl": "Vertaling:\nAfhankelijkheid geüpdateerd",
-        "fr": "Demande de réparation Axios\nDépendances mises à jour",
-        "it": "Richiesta di Axios\nDipendenze aggiornate",
-        "es": "Solicitud de Axios Fijo\nActualización de las dependencias",
-        "pl": "Fix Axios Request (ang.)\nZależności",
-        "uk": "Довідка Axios\nЗалежність оновлено",
-        "zh-cn": "Fix Axios请求\nB. 更新的属地"
       }
     },
     "titleLang": {
