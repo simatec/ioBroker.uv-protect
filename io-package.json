@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "news": {
+      "0.6.2": {
+        "en": "Dependencies updated\nsmall Design Fix",
+        "de": "Ausgaben aktualisiert\nkleines Design Fix",
+        "ru": "Обновленные данные о зависимостях\nмаленький дизайн Fix",
+        "pt": "Dependências atualizadas\npequeno Design Fix",
+        "nl": "Afhankelijkheden bijgewerkt\nkleine ontwerp Fix",
+        "fr": "Dépendances actualisées\npetite fixation de conception",
+        "it": "Dipendenze aggiornate\npiccolo Design Fix",
+        "es": "Actualización de las dependencias\npequeño diseño fijar",
+        "pl": "Aktualizacja zależności\nmały projekt Fix",
+        "uk": "Залежність оновлено\nневеликий дизайн виправити",
+        "zh-cn": "更新的依赖关系\n小设计"
+      },
       "0.6.1": {
         "en": "Dependencies updated\ndev-server added\nRepo Check fix\nResponsive Design added",
         "de": "Ausgaben aktualisiert\ndev-server hinzugefügt\nRepo Check fix\nResponsive Design hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "Zależności\nFix Adapter",
         "uk": "Залежність оновлено\nВиправлення адаптера Зупинка",
         "zh-cn": "B. 更新的属地\nFix Adapter"
-      },
-      "0.4.0": {
-        "en": "Dependencies updated\nRepo updated",
-        "de": "Ausgaben aktualisiert\nRepo aktualisiert",
-        "ru": "Обновленные зависимости\nРепо обновлен",
-        "pt": "Dependências atualizadas\nRepo atualizado",
-        "nl": "Afhankelijkheid geüpdateerd\nVertaling:",
-        "fr": "Dépendances mises à jour\nRepo updated",
-        "it": "Dipendenze aggiornate\nRepo aggiornato",
-        "es": "Actualización de las dependencias\nRepo updated",
-        "pl": "Zależności\nRepo updated",
-        "uk": "Залежність оновлено\nRepo оновлений",
-        "zh-cn": "B. 更新的属地\n更新"
       }
     },
     "titleLang": {
