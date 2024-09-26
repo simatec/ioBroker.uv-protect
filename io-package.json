@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "news": {
+      "0.6.3": {
+        "en": "Fix for Admin 7.1.5",
+        "de": "Fix für Admin 7.1.5",
+        "ru": "7.1.5",
+        "pt": "Fix para Admin 7.1.5",
+        "nl": "Fix voor Admin 7.1.5",
+        "fr": "Correction pour Admin 7.1.5",
+        "it": "Fissare per Admin 7.1.5",
+        "es": "Corrección para Admin 7.1.5",
+        "pl": "Naprawiono dla Admin 7.1.5",
+        "uk": "Виправлення для адміністратора 7.1.5",
+        "zh-cn": "7.1.5 管理员的固定"
+      },
       "0.6.2": {
         "en": "Dependencies updated\nsmall Design Fix",
         "de": "Ausgaben aktualisiert\nkleines Design Fix",
@@ -80,19 +93,6 @@
         "pl": "Zależności\ntest i aktualizacja\nUaktualniać",
         "uk": "Залежність оновлено\nтест і реліз оновлений\nПереклад оновлений",
         "zh-cn": "B. 更新的属地\n试验和释放\n笔译更新"
-      },
-      "0.4.1": {
-        "en": "Dependencies updated\nFix Adapter Stop",
-        "de": "Ausgaben aktualisiert\nAdapter stoppen",
-        "ru": "Обновленные зависимости\nFix адаптер Stop",
-        "pt": "Dependências atualizadas\nFix Adapter Stop",
-        "nl": "Afhankelijkheid geüpdateerd\nVertaling:",
-        "fr": "Dépendances mises à jour\nArrêt de l ' adaptateur",
-        "it": "Dipendenze aggiornate\nBlocco dell'adattatore",
-        "es": "Actualización de las dependencias\nParada de adaptador fijo",
-        "pl": "Zależności\nFix Adapter",
-        "uk": "Залежність оновлено\nВиправлення адаптера Зупинка",
-        "zh-cn": "B. 更新的属地\nFix Adapter"
       }
     },
     "titleLang": {
