@@ -34,6 +34,9 @@ When the adapter crashes or an other Code error happens, this error message that
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) json5 added
+
 ### 0.6.3 (2024-09-26)
 * (simatec) Fix for Admin 7.1.5
 
