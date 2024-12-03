@@ -17,6 +17,7 @@ const adapterName = require('./package.json').name.split('.').pop();
 
 /**
  * Starts the adapter instance
+ *
  * @param {Partial<ioBroker.AdapterOptions>} [options]
  */
 
@@ -50,16 +51,16 @@ function getSystemData() {
 
             if (obj) {
                 systemLang = obj.common.language;
-                adapter.log.debug('System language: ' + systemLang);
+                adapter.log.debug(`System language: ${systemLang}`);
 
                 if (adapter.config.systemGeoData) {
                     longitude = obj.common.longitude;
                     latitude = obj.common.latitude;
-                    adapter.log.debug('System longitude: ' + longitude + ' System latitude: ' + latitude);
+                    adapter.log.debug(`System longitude: ${longitude} System latitude: ${latitude}`);
                 } else {
                     longitude = adapter.config.longitude;
                     latitude = adapter.config.latitude;
-                    adapter.log.debug('longitude: ' + longitude + ' latitude: ' + latitude);
+                    adapter.log.debug(`longitude: ${longitude} latitude: ${latitude}`);
                 }
 
                 // @ts-ignore
@@ -114,12 +115,12 @@ async function requestAPI() {
 
                 // created json
                 let json = ({
-                    "uv": Math.round(openUVRequest.data.result.uv * 100) / 100,
-                    "uv_time": new Date(openUVRequest.data.result.uv_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-                    "uv_max": Math.round(openUVRequest.data.result.uv_max * 100) / 100,
-                    "uv_max_time": new Date(openUVRequest.data.result.uv_max_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-                    "ozone": openUVRequest.data.result.ozone,
-                    "ozone_time": new Date(openUVRequest.data.result.ozone_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                    uv: Math.round(openUVRequest.data.result.uv * 100) / 100,
+                    uv_time: new Date(openUVRequest.data.result.uv_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+                    uv_max: Math.round(openUVRequest.data.result.uv_max * 100) / 100,
+                    uv_max_time: new Date(openUVRequest.data.result.uv_max_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+                    ozone: openUVRequest.data.result.ozone,
+                    ozone_time: new Date(openUVRequest.data.result.ozone_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
                 });
 
                 await adapter.setStateAsync('uv_json', JSON.stringify(json), true);
@@ -188,7 +189,7 @@ async function requestAPI() {
                 adapter.log.warn('API is not reachable');
             }
         } catch (err) {
-            adapter.log.warn('Request error: ' + err);
+            adapter.log.warn(`Request error: ${err}`);
         }
         // @ts-ignore
         resolve();
@@ -211,7 +212,7 @@ async function main() {
     }
 }
 
-// @ts-ignore parent is a valid property on module
+// @ts-expect-error parent is a valid property on module
 if (module.parent) {
     // Export startAdapter in compact mode
     module.exports = startAdapter;
