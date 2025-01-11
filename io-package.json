@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.4",
+    "version": "0.6.5",
     "news": {
+      "0.6.5": {
+        "en": "eslint-config fix\nCode fix\nDependencies updated\nUpdate License",
+        "de": "eslint-config fix\nCode fix\nAusgaben aktualisiert\nLizenz aktualisieren",
+        "ru": "eslint-конфигурация\nКод\nОбновленные данные о зависимостях\nЛицензия обновления",
+        "pt": "eslint-config fix\nCorreção de código\nDependências atualizadas\nLicença de atualização",
+        "nl": "eslint-config fix\nCodefix\nAfhankelijkheden bijgewerkt\nLicentie bijwerken",
+        "fr": "fixateur eslint-config\nFixation du code\nDépendances actualisées\nMettre à jour la licence",
+        "it": "eslint-config fix\nCodice di correzione\nDipendenze aggiornate\nLicenza di aggiornamento",
+        "es": "eslint-config fix\nCódigo\nActualización de las dependencias\nActualizar Licencia",
+        "pl": "fix eslint- config\nUstawienie kodu\nAktualizacja zależności\nUaktualnij licencję",
+        "uk": "eslint-config виправити\nВиправлення коду\nЗалежність оновлено\nОновлення ліцензії",
+        "zh-cn": "埃斯林特配置修复\n代码修正\n更新的依赖关系\n更新许可证"
+      },
       "0.6.4": {
         "en": "json5 added\nDependencies updated\nsmall Design Fix\nIssue Action added\neslint-config added",
         "de": "json5 hinzugefügt\nAusgaben aktualisiert\nkleines Design Fix\nAusgabe Aktion hinzugefügt\neslint-config hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "Zależności",
         "uk": "Залежність оновлено",
         "zh-cn": "B. 更新的属地"
-      },
-      "0.5.0": {
-        "en": "Dependencies updated\nFix units\nCode clean",
-        "de": "Ausgaben aktualisiert\nFeste Einheiten\nCode sauber",
-        "ru": "Обновленные зависимости\nFix единицы\nКод чистый",
-        "pt": "Dependências atualizadas\nUnidades fixas\nCódigo limpo",
-        "nl": "Afhankelijkheid geüpdateerd\nVertaling:\nCode schoon",
-        "fr": "Dépendances mises à jour\nUnités fixes\nCode propre",
-        "it": "Dipendenze aggiornate\nUnità di fissaggio\nCodice pulito",
-        "es": "Actualización de las dependencias\nUnidades fijas\nCódigo limpio",
-        "pl": "Zależności\nFix\nKodeks czysty",
-        "uk": "Залежність оновлено\nФіксатори\nКод очищення",
-        "zh-cn": "B. 更新的属地\n固定单位\n守则"
       }
     },
     "titleLang": {
