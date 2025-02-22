@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "news": {
+      "0.6.6": {
+        "en": "Dependencies updated\nsmall fix",
+        "de": "Ausgaben aktualisiert\nkleine fix",
+        "ru": "Обновленные зависимости\nнебольшой ремонт",
+        "pt": "Dependências atualizadas\npequena correção",
+        "nl": "Afhankelijkheden bijgewerkt\nkleine fix",
+        "fr": "Dépendances actualisées\npetite fixation",
+        "it": "Dipendenze aggiornate\npiccola correzione",
+        "es": "Actualización de las dependencias\npequeño",
+        "pl": "Aktualizacja zależności\nmały fix",
+        "uk": "Залежність оновлено\nневелика фіксація",
+        "zh-cn": "更新的依赖关系\n小修补"
+      },
       "0.6.5": {
         "en": "eslint-config fix\nCode fix\nDependencies updated\nUpdate License",
         "de": "eslint-config fix\nCode fix\nAusgaben aktualisiert\nLizenz aktualisieren",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\ngulp usunięty\n@ iobroker / adapter- dev\nAktualizacja tłumaczeń",
         "uk": "Залежність оновлено\nковпачок видалений\n@iobroker/adapter-dev\nПереклад оновлений",
         "zh-cn": "更新的依赖关系\n已删除\n@iobroctor/适应器-dev\n翻译更新"
-      },
-      "0.5.1": {
-        "en": "Dependencies updated",
-        "de": "Ausgaben aktualisiert",
-        "ru": "Обновленные зависимости",
-        "pt": "Dependências atualizadas",
-        "nl": "Afhankelijkheid geüpdateerd",
-        "fr": "Dépendances mises à jour",
-        "it": "Dipendenze aggiornate",
-        "es": "Actualización de las dependencias",
-        "pl": "Zależności",
-        "uk": "Залежність оновлено",
-        "zh-cn": "B. 更新的属地"
       }
     },
     "titleLang": {
