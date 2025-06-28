@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.6",
+    "version": "0.6.7",
     "news": {
+      "0.6.7": {
+        "en": "dependencies updated",
+        "de": "aktualisierte abhängigkeiten",
+        "ru": "обновленные зависимости",
+        "pt": "dependências atualizadas",
+        "nl": "afhankelijkheden bijgewerkt",
+        "fr": "dépendances mises à jour",
+        "it": "dipendenze aggiornate",
+        "es": "dependencias actualizadas",
+        "pl": "zaktualizowane zależności",
+        "uk": "оновлені залежності",
+        "zh-cn": "更新依赖关系"
+      },
       "0.6.6": {
         "en": "Dependencies updated\nsmall fix",
         "de": "Ausgaben aktualisiert\nkleine fix",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\ndev- server dodany\nSprawdź ponownie\nDodano projekt odpowiedzialny",
         "uk": "Залежність оновлено\nдодано dev-server\nRepo Перевірити виправити\nДодано адаптивний дизайн",
         "zh-cn": "更新的依赖关系\n添加了 dev 服务器\nRepo 检查修正\n添加响应设计"
-      },
-      "0.6.0": {
-        "en": "Dependencies updated\ngulp deleted\n@iobroker/adapter-dev\nTranslation updated",
-        "de": "Ausgaben aktualisiert\ngulp gelöscht\n@iobroker/adapter-dev\nÜbersetzung aktualisiert",
-        "ru": "Обновленные данные о зависимостях\ngulp удален\n@iobroker/adapter-dev\nОбновленный перевод",
-        "pt": "Dependências atualizadas\ngulp excluído\n@iobroker/adapter-dev\nTradução atualizada",
-        "nl": "Afhankelijkheden bijgewerkt\ngulp verwijderd\n@iobroker/adapter-dev\nVertaling bijgewerkt",
-        "fr": "Dépendances actualisées\ngulp supprimé\n@iobroker/adaptateur-dev\nTraduction mise à jour",
-        "it": "Dipendenze aggiornate\ngulp cancellato\n@iobroker/adapter-dev\nTraduzione aggiornata",
-        "es": "Actualización de las dependencias\ngulp eliminado\n@iobroker/adapter-dev\nTraducción actualizada",
-        "pl": "Aktualizacja zależności\ngulp usunięty\n@ iobroker / adapter- dev\nAktualizacja tłumaczeń",
-        "uk": "Залежність оновлено\nковпачок видалений\n@iobroker/adapter-dev\nПереклад оновлений",
-        "zh-cn": "更新的依赖关系\n已删除\n@iobroctor/适应器-dev\n翻译更新"
       }
     },
     "titleLang": {
