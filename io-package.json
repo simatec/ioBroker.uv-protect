@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.7",
+    "version": "0.6.8",
     "news": {
+      "0.6.8": {
+        "en": "dependencies updated\nFix API Key",
+        "de": "aktualisierte abhängigkeiten\nFix API Schlüssel",
+        "ru": "обновленные зависимости\nFix API Ключ",
+        "pt": "dependências atualizadas\nCorrigir API Chave",
+        "nl": "afhankelijkheden bijgewerkt\nFix API Sleutel",
+        "fr": "dépendances mises à jour\nCorrection de l'API Clé",
+        "it": "dipendenze aggiornate\nFissare API Chiave",
+        "es": "dependencias actualizadas\nFijar API Clave",
+        "pl": "zaktualizowane zależności\nNapraw API Klucz",
+        "uk": "оновлені залежності\nФіксація API Головна",
+        "zh-cn": "更新依赖关系\n修复 API 密钥"
+      },
       "0.6.7": {
         "en": "dependencies updated",
         "de": "aktualisierte abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\nmały projekt Fix",
         "uk": "Залежність оновлено\nневеликий дизайн виправити",
         "zh-cn": "更新的依赖关系\n小设计"
-      },
-      "0.6.1": {
-        "en": "Dependencies updated\ndev-server added\nRepo Check fix\nResponsive Design added",
-        "de": "Ausgaben aktualisiert\ndev-server hinzugefügt\nRepo Check fix\nResponsive Design hinzugefügt",
-        "ru": "Обновленные данные о зависимостях\nдобавлено dev-server\nРеконструкция\nResponsive Design",
-        "pt": "Dependências atualizadas\ndev-server adicionado\nRepo Check correção\nDesign responsivo adicionado",
-        "nl": "Afhankelijkheden bijgewerkt\ndev-server toegevoegd\nRepo Controle fix\nResponsive Design toegevoegd",
-        "fr": "Dépendances actualisées\ndev-server ajouté\nCorrection de la vérification de repo\nDesign sensible ajouté",
-        "it": "Dipendenze aggiornate\naggiunto\nRepo Check fix\nResponsive Design aggiunto",
-        "es": "Actualización de las dependencias\ndev-server añadido\nRepo Check fix\nDiseño responsable añadido",
-        "pl": "Aktualizacja zależności\ndev- server dodany\nSprawdź ponownie\nDodano projekt odpowiedzialny",
-        "uk": "Залежність оновлено\nдодано dev-server\nRepo Перевірити виправити\nДодано адаптивний дизайн",
-        "zh-cn": "更新的依赖关系\n添加了 dev 服务器\nRepo 检查修正\n添加响应设计"
       }
     },
     "titleLang": {
