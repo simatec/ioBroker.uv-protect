@@ -36,6 +36,7 @@ When the adapter crashes or an other Code error happens, this error message that
 <!-- ### __WORK IN PROGRESS__ -->
 ### __WORK IN PROGRESS__
 * (simatec) dependencies updated
+* (simatec) Fix API Key
 
 ### 0.6.7 (2025-06-28)
 * (simatec) dependencies updated
