@@ -159,7 +159,6 @@
         "admin": ">=7.6.17"
       }
     ],
-    "jsonConfig": true,
     "adminUI": {
       "config": "json"
     }
