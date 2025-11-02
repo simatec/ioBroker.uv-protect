@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.8",
+    "version": "0.6.9",
     "news": {
+      "0.6.9": {
+        "en": "dependencies updated\nFix npm publish",
+        "de": "aktualisierte abhängigkeiten\nNpm veröffentlichen",
+        "ru": "обновленные зависимости\nИздательство Fix npm",
+        "pt": "dependências atualizadas\nCorrigir a publicação do npm",
+        "nl": "afhankelijkheden bijgewerkt\nFix npm publiceren",
+        "fr": "dépendances mises à jour\nCorrection de npm publier",
+        "it": "dipendenze aggiornate\nFisso npm pubblicazione",
+        "es": "dependencias actualizadas\nCorrección npm publicar",
+        "pl": "zaktualizowane zależności\nNapraw publikację npm",
+        "uk": "оновлені залежності\nВиправлення npm опублікування",
+        "zh-cn": "更新依赖关系\n修复 npm 发布"
+      },
       "0.6.8": {
         "en": "dependencies updated\nFix API Key",
         "de": "aktualisierte abhängigkeiten\nFix API Schlüssel",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono dla Admin 7.1.5",
         "uk": "Виправлення для адміністратора 7.1.5",
         "zh-cn": "7.1.5 管理员的固定"
-      },
-      "0.6.2": {
-        "en": "Dependencies updated\nsmall Design Fix",
-        "de": "Ausgaben aktualisiert\nkleines Design Fix",
-        "ru": "Обновленные данные о зависимостях\nмаленький дизайн Fix",
-        "pt": "Dependências atualizadas\npequeno Design Fix",
-        "nl": "Afhankelijkheden bijgewerkt\nkleine ontwerp Fix",
-        "fr": "Dépendances actualisées\npetite fixation de conception",
-        "it": "Dipendenze aggiornate\npiccolo Design Fix",
-        "es": "Actualización de las dependencias\npequeño diseño fijar",
-        "pl": "Aktualizacja zależności\nmały projekt Fix",
-        "uk": "Залежність оновлено\nневеликий дизайн виправити",
-        "zh-cn": "更新的依赖关系\n小设计"
       }
     },
     "titleLang": {
