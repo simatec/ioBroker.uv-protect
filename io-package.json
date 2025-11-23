@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.9",
+    "version": "0.6.10",
     "news": {
+      "0.6.10": {
+        "en": "dependencies updated",
+        "de": "aktualisierte abhängigkeiten",
+        "ru": "обновленные зависимости",
+        "pt": "dependências atualizadas",
+        "nl": "afhankelijkheden bijgewerkt",
+        "fr": "dépendances mises à jour",
+        "it": "dipendenze aggiornate",
+        "es": "dependencias actualizadas",
+        "pl": "zaktualizowane zależności",
+        "uk": "оновлені залежності",
+        "zh-cn": "更新依赖关系"
+      },
       "0.6.9": {
         "en": "dependencies updated\nFix npm publish",
         "de": "aktualisierte abhängigkeiten\nNpm veröffentlichen",
@@ -80,19 +93,6 @@
         "pl": "dodano json5\nAktualizacja zależności\nmały projekt Fix\nDodano działanie\neslint- config dodany",
         "uk": "json5 додано\nЗалежність оновлено\nневеликий дизайн виправити\nДодана емісія\neslint-config додано",
         "zh-cn": "json5 已添加\n更新的依赖关系\n小设计\n添加的问题行动\n添加埃斯林特配置"
-      },
-      "0.6.3": {
-        "en": "Fix for Admin 7.1.5",
-        "de": "Fix für Admin 7.1.5",
-        "ru": "7.1.5",
-        "pt": "Fix para Admin 7.1.5",
-        "nl": "Fix voor Admin 7.1.5",
-        "fr": "Correction pour Admin 7.1.5",
-        "it": "Fissare per Admin 7.1.5",
-        "es": "Corrección para Admin 7.1.5",
-        "pl": "Naprawiono dla Admin 7.1.5",
-        "uk": "Виправлення для адміністратора 7.1.5",
-        "zh-cn": "7.1.5 管理员的固定"
       }
     },
     "titleLang": {

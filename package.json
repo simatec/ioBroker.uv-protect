@@ -1,6 +1,6 @@
 {
   "name": "iobroker.uv-protect",
-  "version": "0.6.9",
+  "version": "0.6.10",
   "description": "UV-Protect from openUV-API",
   "author": {
     "name": "simatec",
