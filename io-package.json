@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.10",
+    "version": "0.6.11",
     "news": {
+      "0.6.11": {
+        "en": "Fix Timeout",
+        "de": "Timeout reparieren",
+        "ru": "Исправить Timeout",
+        "pt": "Tempo- limite de correção",
+        "nl": "Tijdslimiet herstellen",
+        "fr": "Correction du délai",
+        "it": "Risolto il timeout",
+        "es": "Corrección de tiempo",
+        "pl": "Popraw czas",
+        "uk": "Виправлення часу",
+        "zh-cn": "修正超时"
+      },
       "0.6.10": {
         "en": "dependencies updated",
         "de": "aktualisierte abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "fix eslint- config\nUstawienie kodu\nAktualizacja zależności\nUaktualnij licencję",
         "uk": "eslint-config виправити\nВиправлення коду\nЗалежність оновлено\nОновлення ліцензії",
         "zh-cn": "埃斯林特配置修复\n代码修正\n更新的依赖关系\n更新许可证"
-      },
-      "0.6.4": {
-        "en": "json5 added\nDependencies updated\nsmall Design Fix\nIssue Action added\neslint-config added",
-        "de": "json5 hinzugefügt\nAusgaben aktualisiert\nkleines Design Fix\nAusgabe Aktion hinzugefügt\neslint-config hinzugefügt",
-        "ru": "json5 добавлен\nОбновленные данные о зависимостях\nмаленький дизайн Fix\nДополнительные меры\nдобавлена eslint-config",
-        "pt": "json5 adicionado\nDependências atualizadas\npequeno Design Fix\nAção de problemas adicionada\neslint-config adicionado",
-        "nl": "json5 toegevoegd\nAfhankelijkheden bijgewerkt\nkleine ontwerp Fix\nOnderwerpactie toegevoegd\neslint-config toegevoegd",
-        "fr": "json5 ajouté\nDépendances actualisées\npetite fixation de conception\nMesure à prendre\neslint-config ajouté",
-        "it": "json5 aggiunto\nDipendenze aggiornate\npiccolo Design Fix\nAzione di problema aggiunto\neslint-config aggiunto",
-        "es": "json5 añadido\nActualización de las dependencias\npequeño diseño fijar\nTema Acción añadido\neslint-config añadido",
-        "pl": "dodano json5\nAktualizacja zależności\nmały projekt Fix\nDodano działanie\neslint- config dodany",
-        "uk": "json5 додано\nЗалежність оновлено\nневеликий дизайн виправити\nДодана емісія\neslint-config додано",
-        "zh-cn": "json5 已添加\n更新的依赖关系\n小设计\n添加的问题行动\n添加埃斯林特配置"
       }
     },
     "titleLang": {
