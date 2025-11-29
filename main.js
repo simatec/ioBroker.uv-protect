@@ -89,7 +89,7 @@ async function requestAPI() {
             const openUVRequest = await axios({
                 method: 'get',
                 url: openUVURL,
-                timeout: 5000,
+                timeout: 10000,
                 params: {
                     lat: latitude,
                     lng: longitude
