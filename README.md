@@ -36,6 +36,7 @@ When the adapter crashes or an other Code error happens, this error message that
 <!-- ### __WORK IN PROGRESS__ -->
 ### **WORK IN PROGRESS**
 * (simatec) Fix License
+* (simatec) dependencies updated
 
 ### 0.6.11 (2025-11-29)
 * (simatec) Fix Timeout
