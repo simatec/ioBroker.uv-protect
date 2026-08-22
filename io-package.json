@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "news": {
+      "0.7.1": {
+        "en": "small Bugfixes",
+        "de": "kleinere Fehlerbehebungen",
+        "ru": "небольшие исправления ошибок",
+        "pt": "Pequenas correções de bugs",
+        "nl": "kleine bugfixes",
+        "fr": "Corrections de bugs mineurs",
+        "it": "Piccole correzioni di bug",
+        "es": "Pequeñas correcciones de errores",
+        "pl": "drobne poprawki błędów",
+        "uk": "невеликі виправлення помилок",
+        "zh-cn": "修复了一些小错误"
+      },
       "0.7.0": {
         "en": "Source code cleaned up",
         "de": "Quellcode bereinigt",
@@ -80,19 +93,6 @@
         "pl": "zaktualizowane zależności\nNapraw API Klucz",
         "uk": "оновлені залежності\nФіксація API Головна",
         "zh-cn": "更新依赖关系\n修复 API 密钥"
-      },
-      "0.6.7": {
-        "en": "dependencies updated",
-        "de": "aktualisierte abhängigkeiten",
-        "ru": "обновленные зависимости",
-        "pt": "dependências atualizadas",
-        "nl": "afhankelijkheden bijgewerkt",
-        "fr": "dépendances mises à jour",
-        "it": "dipendenze aggiornate",
-        "es": "dependencias actualizadas",
-        "pl": "zaktualizowane zależności",
-        "uk": "оновлені залежності",
-        "zh-cn": "更新依赖关系"
       }
     },
     "titleLang": {
