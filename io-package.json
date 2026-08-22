@@ -606,7 +606,7 @@
       "_id": "uv_alert",
       "type": "state",
       "common": {
-        "role": "switch",
+        "role": "indicator",
         "name": "UV Alert",
         "type": "boolean",
         "read": true,
@@ -619,7 +619,7 @@
       "_id": "uv_warn",
       "type": "state",
       "common": {
-        "role": "switch",
+        "role": "indicator",
         "name": "UV Warn",
         "type": "boolean",
         "read": true,

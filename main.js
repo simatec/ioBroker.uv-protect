@@ -208,7 +208,7 @@ async function main() {
         }
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!');
-        stopTimer = setTimeout(async () => adapter.stop(), 6000);
+        stopTimer = adapter.setTimeout(async () => adapter.stop(), 6000);
     }
 }
 
