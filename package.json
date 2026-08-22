@@ -23,8 +23,8 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.3.2",
-    "axios": "^1.15.0"
+    "@iobroker/adapter-core": "^3.4.3",
+    "axios": "^1.19.0"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^5.2.1",
