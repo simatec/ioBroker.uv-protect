@@ -57,7 +57,8 @@
     "www/",
     "io-package.json",
     "LICENSE",
-    "main.js"
+    "main.js",
+    "!CHANGELOG_OLD.md"
   ],
   "scripts": {
     "test": "npm run test:package && npm run test:unit",
