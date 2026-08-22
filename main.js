@@ -33,7 +33,7 @@ function startAdapter(options) {
 
     adapter.on('unload', (callback) => {
         try {
-            clearTimeout(stopTimer);
+            adapter.clearTimeout(stopTimer);
             callback();
         } catch (e) {
             callback();
@@ -204,7 +204,7 @@ async function main() {
 
         if (obj) {
             await requestAPI();
-            stopTimer = setTimeout(async () => adapter.stop(), 6000);
+            stopTimer = adapter.setTimeout(async () => adapter.stop(), 6000);
         }
     } else {
         adapter.log.warn('system settings cannot be called up. Please check configuration!');
