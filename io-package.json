@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "uv-protect",
-    "version": "0.6.12",
+    "version": "0.7.0",
     "news": {
+      "0.7.0": {
+        "en": "Source code cleaned up",
+        "de": "Quellcode bereinigt",
+        "ru": "Исходный код очищен.",
+        "pt": "Código-fonte limpo",
+        "nl": "Broncode opgeschoond",
+        "fr": "Code source nettoyé",
+        "it": "Codice sorgente ripulito",
+        "es": "Código fuente depurado",
+        "pl": "Kod źródłowy został oczyszczony",
+        "uk": "Вихідний код очищено",
+        "zh-cn": "源代码已清理"
+      },
       "0.6.12": {
         "en": "Fix License\ndependencies updated",
         "de": "Lizenzierung aktivieren\naktualisierte abhängigkeiten",
@@ -80,19 +93,6 @@
         "pl": "zaktualizowane zależności",
         "uk": "оновлені залежності",
         "zh-cn": "更新依赖关系"
-      },
-      "0.6.6": {
-        "en": "Dependencies updated\nsmall fix",
-        "de": "Ausgaben aktualisiert\nkleine fix",
-        "ru": "Обновленные зависимости\nнебольшой ремонт",
-        "pt": "Dependências atualizadas\npequena correção",
-        "nl": "Afhankelijkheden bijgewerkt\nkleine fix",
-        "fr": "Dépendances actualisées\npetite fixation",
-        "it": "Dipendenze aggiornate\npiccola correzione",
-        "es": "Actualización de las dependencias\npequeño",
-        "pl": "Aktualizacja zależności\nmały fix",
-        "uk": "Залежність оновлено\nневелика фіксація",
-        "zh-cn": "更新的依赖关系\n小修补"
       }
     },
     "titleLang": {
