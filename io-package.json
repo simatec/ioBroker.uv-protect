@@ -213,7 +213,7 @@
       "_id": "uv",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "UV Index (real-time or forecasted depending on dt parameter)",
         "type": "number",
         "read": true,
@@ -226,7 +226,7 @@
       "_id": "uv_time",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "UV Index datetime in UTC",
         "type": "string",
         "read": true,
@@ -239,7 +239,7 @@
       "_id": "uv_max",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "max UV Index for the day (at solar noon)",
         "type": "number",
         "read": true,
@@ -252,7 +252,7 @@
       "_id": "uv_max_time",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "max UV Index datetime (solar noon) in UTC",
         "type": "string",
         "read": true,
@@ -265,7 +265,7 @@
       "_id": "ozone",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "ozone level in du (Dobson Units) from OMI data or request",
         "type": "number",
         "unit": "DU",
@@ -279,7 +279,7 @@
       "_id": "ozone_time",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "Latest OMI ozone update datetime in UTC",
         "type": "string",
         "read": true,
@@ -292,7 +292,7 @@
       "_id": "safe_exposure_time.st1",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 1",
         "type": "number",
         "read": true,
@@ -305,7 +305,7 @@
       "_id": "safe_exposure_time.st2",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 2",
         "type": "number",
         "read": true,
@@ -318,7 +318,7 @@
       "_id": "safe_exposure_time.st3",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 3",
         "type": "number",
         "read": true,
@@ -331,7 +331,7 @@
       "_id": "safe_exposure_time.st4",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 4",
         "type": "number",
         "read": true,
@@ -344,7 +344,7 @@
       "_id": "safe_exposure_time.st5",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 5",
         "type": "number",
         "read": true,
@@ -357,7 +357,7 @@
       "_id": "safe_exposure_time.st6",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "safe exposure time (mins) till burn for Skin Type 6",
         "type": "number",
         "read": true,
@@ -370,7 +370,7 @@
       "_id": "sun_info.sun_times.solarNoon",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "solar noon (sun is in the highest position)",
         "type": "string",
         "read": true,
@@ -383,7 +383,7 @@
       "_id": "sun_info.sun_times.nadir",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "nadir (darkest moment of the night, sun is in the lowest position) ",
         "type": "string",
         "read": true,
@@ -396,7 +396,7 @@
       "_id": "sun_info.sun_times.sunrise",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sunrise (top edge of the sun appears on the horizon)",
         "type": "string",
         "read": true,
@@ -409,7 +409,7 @@
       "_id": "sun_info.sun_times.sunset",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sunset starts (bottom edge of the sun touches the horizon)",
         "type": "string",
         "read": true,
@@ -422,7 +422,7 @@
       "_id": "sun_info.sun_times.sunriseEnd",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sunrise ends (bottom edge of the sun touches the horizon)",
         "type": "string",
         "read": true,
@@ -435,7 +435,7 @@
       "_id": "sun_info.sun_times.sunsetStart",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sunset starts (bottom edge of the sun touches the horizon)",
         "type": "string",
         "read": true,
@@ -448,7 +448,7 @@
       "_id": "sun_info.sun_times.dawn",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "dawn (morning nautical twilight ends, morning civil twilight starts) ",
         "type": "string",
         "read": true,
@@ -461,7 +461,7 @@
       "_id": "sun_info.sun_times.dusk",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "dusk (evening nautical twilight starts)",
         "type": "string",
         "read": true,
@@ -474,7 +474,7 @@
       "_id": "sun_info.sun_times.nauticalDawn",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "nautical dawn (morning nautical twilight starts)",
         "type": "string",
         "read": true,
@@ -487,7 +487,7 @@
       "_id": "sun_info.sun_times.nauticalDusk",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "nautical dusk (evening astronomical twilight starts)",
         "type": "string",
         "read": true,
@@ -500,7 +500,7 @@
       "_id": "sun_info.sun_times.nightEnd",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "night ends (morning astronomical twilight starts)",
         "type": "string",
         "read": true,
@@ -513,7 +513,7 @@
       "_id": "sun_info.sun_times.night",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "night starts (dark enough for astronomical observations)",
         "type": "string",
         "read": true,
@@ -526,7 +526,7 @@
       "_id": "sun_info.sun_times.goldenHourEnd",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "morning golden hour (soft light, best time for photography) ends",
         "type": "string",
         "read": true,
@@ -539,7 +539,7 @@
       "_id": "sun_info.sun_times.goldenHour",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "evening golden hour starts",
         "type": "string",
         "read": true,
@@ -552,7 +552,7 @@
       "_id": "sun_info.sun_position.azimuth",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sun azimuth in radians",
         "type": "number",
         "unit": "°",
@@ -566,7 +566,7 @@
       "_id": "sun_info.sun_position.altitude",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "sun altitude above the horizon in radians",
         "type": "number",
         "unit": "°",
@@ -593,7 +593,7 @@
       "_id": "uv_level",
       "type": "state",
       "common": {
-        "role": "indicator",
+        "role": "state",
         "name": "UV Level",
         "type": "string",
         "read": true,
